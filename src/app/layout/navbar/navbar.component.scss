@@ -1,0 +1,23 @@
+@import "../../../styles/variables";
+
+.wh-logo-google {
+  height: 1.5rem;
+  width: 4.625rem;
+}
+.wh-user-google {
+  width: 2rem;
+  height: 2rem;
+}
+.wh-img-item-app {
+  height: 35px;
+  width: 35px;
+}
+.dropdown-menu {
+  background-color: var(--color-dark-1);
+}
+.hover-bg-gray:hover {
+  background-color: rgba($color: $white, $alpha: 0.1);
+}
+.hover-bg-dark:hover {
+  background-color: rgba($color: $dark, $alpha: 0.3);
+}

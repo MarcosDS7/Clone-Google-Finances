@@ -1,1 +1,65 @@
-<p>navbar works!</p>
+<section class="d-flex justify-content-between align-items-center p-2">
+  <div class="d-flex align-items-center">
+    <button
+      class="btn d-flex p-2 mx-1 shadow-none rounded-circle hover-bg-gray"
+    >
+      <i class="material-icons text-white" title="Ícone de menu">menu</i>
+    </button>
+    <a
+      class="d-flex align-items-center mt-1 text-decoration-none"
+      [routerLink]="['/']"
+    >
+      <img
+        class="d-block wh-logo-google"
+        src="./assets/img/google.svg"
+        alt="Logo do google"
+      />
+      <p class="mb-0 ms-2 font-monospace fw-medium fs-5 text-light">Finanças</p>
+    </a>
+  </div>
+  <div class="d-flex align-items-center mt-1">
+    <div>
+      <button
+        class="btn d-flex p-2 shadow-none rounded-circle hover-bg-gray"
+        id="dropdownMenuButton1"
+        data-bs-toggle="dropdown"
+        type="button"
+        aria-expanded="false"
+      >
+        <i class="material-icons text-white" title="Ícone de itens">apps</i>
+      </button>
+      <ul
+        class="dropdown-menu col-8 col-sm-5 col-md-4 col-lg-3 col-xl-3 col-xxl-2 p-2 border border-dark"
+        aria-labelledby="dropdownMenuButton1"
+      >
+        <div class="row row-cols-3 g-2">
+          <li *ngFor="let image of listImages">
+            <a
+              class="d-flex flex-column align-items-center gap-2 text-decoration-none text-white text-opacity-75 rounded p-2 hover-bg-dark"
+              [routerLink]="['/']"
+            >
+              <div class="wh-img-item-app d-flex">
+                <img
+                  class="d-block w-100"
+                  src="./assets/img/{{ image.url }}"
+                  alt="Imagem de apps do google"
+                />
+              </div>
+              <small>{{ image.name }}</small>
+            </a>
+          </li>
+        </div>
+      </ul>
+    </div>
+    <a
+      class="btn p-1 mx-2 shadow-none rounded-circle hover-bg-gray"
+      [routerLink]="['/']"
+    >
+      <img
+        class="rounded-circle d-block wh-user-google"
+        src="./assets/img/img-user.png"
+        alt="Imagem do usuário"
+      />
+    </a>
+  </div>
+</section>

@@ -1,3 +1,19 @@
+:root {
+  --color-dark-1: #040d12;
+  --color-green-1: #12554d;
+  --color-green-2: #0d8a46;
+  --color-green-3: #159714;
+  --color-blue-1: #030b6f;
+  --color-blue-2: #072d82;
+  --color-blue-3: #3d6af0;
+  --color-red-1: #da2937;
+  --color-red-2: #f53152;
+  --color-red-3: #c5627f;
+  --color-yellow-1: #bb7000;
+  --color-yellow-2: #a07d20;
+  --text-medium: 500;
+}
+
 $orange: #fd7e14;
 $blue: #185ac3;
 $green: #227c40;
@@ -5,7 +21,7 @@ $yellow: #ffc500;
 $indigo: #6610f2;
 $red: #c9312e;
 $white: #ffffff;
-$dark: #000000;
+$dark: #030305;
 $purple: #c29ffa;
 $pink: #fce8e6;
 $cyan: #e6f4ea;
@@ -22,7 +38,7 @@ $info: $cyan;
 $enable-shadows: true;
 $enable-gradients: true;
 $enable-responsive-font-sizes: true;
-$body-bg: $white;
+$body-bg: #040d12;
 $body-color: $gray;
 $link-color: $gray;
 $card-border-color: rgba($white, 0.125);
