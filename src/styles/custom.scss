@@ -1,0 +1,22 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: $font-family-sans-serif;
+}
+
+:root {
+  --color-green-1: #12554d;
+  --color-green-2: #0d8a46;
+  --color-green-3: #159714;
+  --color-blue-1: #030b6f;
+  --color-blue-2: #072d82;
+  --color-blue-3: #3d6af0;
+  --color-red-1: #da2937;
+  --color-red-2: #f53152;
+  --color-red-3: #c5627f;
+  --color-yellow-1: #bb7000;
+  --color-yellow-2: #a07d20;
+}

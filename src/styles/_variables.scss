@@ -1,0 +1,49 @@
+$orange: #fd7e14;
+$blue: #185ac3;
+$green: #227c40;
+$yellow: #ffc500;
+$indigo: #6610f2;
+$red: #c9312e;
+$white: #ffffff;
+$dark: #000000;
+$purple: #c29ffa;
+$pink: #fce8e6;
+$cyan: #e6f4ea;
+$teal: #e1ecf9;
+$gray: #6a6b6d;
+
+$primary: $blue;
+$secondary: $gray;
+$danger: $red;
+$success: $green;
+$warning: $yellow;
+$info: $cyan;
+
+$enable-shadows: true;
+$enable-gradients: true;
+$enable-responsive-font-sizes: true;
+$body-bg: $white;
+$body-color: $gray;
+$link-color: $gray;
+$card-border-color: rgba($white, 0.125);
+$card-bg: rgba($white, 0.05);
+$table-bg: $white;
+$list-group-bg: rgba($white, 0.05);
+$modal-content-bg: rgba($white, 1);
+$jumbotron-bg: rgba($white, 0.05);
+$font-sizes: (
+  1: 3.75rem,
+  2: 2.5rem,
+  3: 2rem,
+  4: 1.5rem,
+  5: 1.125rem,
+  6: 0.875rem,
+);
+$enable-negative-margins: true;
+
+$font-family-sans-serif: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+$font-family-monospace: "Open Sans", SFMono-Regular, Menlo, Monaco, Consolas,
+  "Liberation Mono", "Courier New", monospace !default;
