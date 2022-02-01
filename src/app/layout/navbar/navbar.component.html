@@ -1,0 +1,148 @@
+<section class="d-flex justify-content-between align-items-center p-2">
+  <div class="d-flex align-items-center">
+    <button
+      class="btn d-flex p-2 mx-1 shadow-none rounded-circle hover-bg-gray"
+    >
+      <i class="material-icons text-white" title="Ícone de menu">menu</i>
+    </button>
+    <a
+      class="d-flex align-items-center mt-1 text-decoration-none"
+      [routerLink]="['/']"
+    >
+      <img
+        class="d-block wh-logo-google"
+        src="./assets/img/google.svg"
+        alt="Logo do google"
+      />
+      <p class="mb-0 ms-2 font-monospace fw-medium fs-5 text-light">Finanças</p>
+    </a>
+  </div>
+  <div class="d-flex align-items-center mt-1">
+    <div>
+      <button
+        class="btn d-flex p-2 shadow-none rounded-circle hover-bg-gray"
+        id="dropdownApps"
+        data-bs-toggle="dropdown"
+        type="button"
+        aria-expanded="false"
+      >
+        <i class="material-icons text-white" title="Ícone de itens">apps</i>
+      </button>
+      <ul
+        class="dropdown-menu col-8 col-sm-5 col-md-4 col-lg-3 col-xl-3 col-xxl-2 p-2 border border-dark"
+        aria-labelledby="dropdownApps"
+      >
+        <div class="row row-cols-3 g-2">
+          <li *ngFor="let image of listImages">
+            <a
+              class="d-flex flex-column align-items-center gap-2 text-decoration-none text-white text-opacity-75 rounded p-2 hover-bg-dark"
+              [routerLink]="['/']"
+            >
+              <div class="wh-img-item-app d-flex">
+                <img
+                  class="d-block w-100"
+                  src="./assets/img/{{ image.url }}"
+                  alt="Imagem de apps do google"
+                />
+              </div>
+              <small>{{ image.name }}</small>
+            </a>
+          </li>
+        </div>
+      </ul>
+    </div>
+    <div>
+      <button
+        class="btn p-1 mx-2 shadow-none rounded-circle hover-bg-gray"
+        id="dropdownAccount"
+        data-bs-toggle="dropdown"
+        type="button"
+        aria-expanded="false"
+      >
+        <img
+          class="rounded-circle d-block wh-user-google"
+          src="./assets/img/img-user.png"
+          alt="Imagem do usuário"
+        />
+      </button>
+      <ul
+        class="dropdown-menu wh-card-account col-11 px-2 pt-2 pb-0 border border-dark"
+        aria-labelledby="dropdownAccount"
+      >
+        <div
+          class="p-4 d-flex flex-column align-items-center border-bottom border-dark"
+        >
+          <div class="wh-user-google-expanded mb-3">
+            <img
+              class="rounded-circle d-block w-100"
+              src="./assets/img/img-user.png"
+              alt="Imagem do usuário"
+            />
+          </div>
+          <p class="m-0 fw-medium font-monospace text-light">Ultra Chrome</p>
+          <small class="text-light text-opacity-75"
+            >ultra.chrome2022@gmail.com</small
+          >
+          <button
+            class="font-monospace btn border border-dark fs-6 text-white hover-bg-dark rounded-pill mt-3 px-3"
+          >
+            Gerenciar sua Conta do Google
+          </button>
+        </div>
+        <div class="border-bottom border-dark">
+          <button
+            class="py-3 btn w-100 px-4 d-flex align-items-center gap-3 hover-bg-dark"
+            type="button"
+          >
+            <img
+              class="rounded-circle d-block wh-img-user-google-2"
+              src="./assets/img/img-user-yellow.png"
+              alt="Imagem do usuário"
+            />
+            <div class="text-start">
+              <p class="fs-6 font-monospace text-light fw-medium m-0">
+                Marcos Souza
+              </p>
+              <small class="text-light text-opacity-50"
+                >marcossouza.0ds@gmail.com</small
+              >
+            </div>
+          </button>
+          <button
+            class="py-3 btn w-100 px-4 d-flex align-items-center gap-3 text-light hover-bg-dark"
+            type="button"
+          >
+            <i class="bi bi-person-plus d-flex fs-5 ms-2"></i>
+            <p class="fs-6 font-monospace fw-medium mb-0 me-2">
+              Adicionar outra conta
+            </p>
+          </button>
+        </div>
+        <div
+          class="border-bottom border-dark py-3 px-4 d-flex justify-content-center"
+        >
+          <button
+            class="font-monospace btn border border-dark fs-6 text-white hover-bg-dark rounded px-3 py-2"
+          >
+            Sair de todas as contas
+          </button>
+        </div>
+        <div
+          class="py-2 d-flex justify-content-center align-items-center gap-1"
+        >
+          <a
+            class="text-decoration-none text-light text-opacity-50 py-1 px-2 hover-bg-dark"
+            [routerLink]="['/']"
+            ><small>Política de Privacidade</small></a
+          >
+          <span class="py-1">•</span>
+          <a
+            class="text-decoration-none text-light text-opacity-50 py-1 px-2 hover-bg-dark"
+            [routerLink]="['/']"
+            ><small>Termos de Serviço</small></a
+          >
+        </div>
+      </ul>
+    </div>
+  </div>
+</section>
