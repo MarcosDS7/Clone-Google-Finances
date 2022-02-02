@@ -10,3 +10,11 @@ body {
 .fw-medium {
   font-weight: var(--text-medium);
 }
+
+.text-blue-0 {
+  color: $blue;
+}
+
+.bg-blue-teal {
+  background-color: $teal;
+}
