@@ -4,12 +4,12 @@
   <section class="container-lg p-0">
     <nav>
       <div
-        class="nav nav-tabs border-0 justify-content-center gap-2 mb-4"
+        class="nav nav-tabs border-0 justify-content-center gap-2 mb-2"
         id="nav-tab"
         role="tablist"
       >
         <a
-          class="font-monospace fs-6 fw-medium text-light py-1 px-3 text-decoration-none rounded-pill active"
+          class="font-monospace fs-6 fw-medium text-light text-opacity-50 py-1 px-3 text-decoration-none rounded-pill active"
           id="nav-eua-tab"
           data-bs-target="#nav-eua"
           data-bs-toggle="tab"
@@ -21,7 +21,7 @@
           Estados Unidos
         </a>
         <a
-          class="font-monospace fs-6 fw-medium text-light py-1 px-3 text-decoration-none rounded-pill"
+          class="font-monospace fs-6 fw-medium text-light text-opacity-50 py-1 px-3 text-decoration-none rounded-pill"
           id="nav-europe-tab"
           data-bs-target="#nav-europe"
           data-bs-toggle="tab"
@@ -33,7 +33,7 @@
           Europa
         </a>
         <a
-          class="font-monospace fs-6 fw-medium text-light py-1 px-3 text-decoration-none rounded-pill"
+          class="font-monospace fs-6 fw-medium text-light text-opacity-50 py-1 px-3 text-decoration-none rounded-pill"
           id="nav-asia-tab"
           data-bs-target="#nav-asia"
           data-bs-toggle="tab"
@@ -45,7 +45,7 @@
           Ásia
         </a>
         <a
-          class="font-monospace fs-6 fw-medium text-light py-1 px-3 text-decoration-none rounded-pill"
+          class="font-monospace fs-6 fw-medium text-light text-opacity-50 py-1 px-3 text-decoration-none rounded-pill"
           id="nav-coin-tab"
           data-bs-target="#nav-coin"
           data-bs-toggle="tab"
@@ -57,7 +57,7 @@
           Moedas
         </a>
         <a
-          class="font-monospace fs-6 fw-medium text-light py-1 px-3 text-decoration-none rounded-pill"
+          class="font-monospace fs-6 fw-medium text-light text-opacity-50 py-1 px-3 text-decoration-none rounded-pill"
           id="nav-crypto-tab"
           data-bs-target="#nav-crypto"
           data-bs-toggle="tab"
@@ -80,108 +80,36 @@
         <ul
           class="list-unstyled row row-cols-1 row-cols-sm-2 row-cols-lg-5 justify-content-center g-2"
         >
-          <li>
+          <li *ngFor="let eua of listDataEUA">
             <div
               class="rounded-2 border border-dark p-1 d-flex justify-content-between gap-2 bg-body"
             >
               <div class="d-flex align-items-start gap-2">
                 <div
-                  class="wh-tab-bg-icon d-flex justify-content-center m-0 mt-1 align-items-center p-0 rounded-3 text-success wh-tab-bg-icon-green"
+                  class="wh-tab-bg-icon d-flex justify-content-center m-0 mt-1 align-items-center p-0 rounded-3"
+                  [ngClass]="{
+                    'text-success wh-tab-bg-icon-green':
+                      eua.icon === 'arrow_upward',
+                    'text-danger wh-tab-bg-icon-danger':
+                      eua.icon === 'arrow_downward'
+                  }"
                 >
-                  <i class="material-icons fs-5">arrow_upward</i>
+                  <i class="material-icons fs-5">{{ eua.icon }}</i>
                 </div>
                 <div class="d-flex flex-column">
-                  <small class="text-light">Dow Jones</small>
-                  <small class="fs-6">35.405,24</small>
+                  <small class="text-light">{{ eua.name }}</small>
+                  <small class="fs-6">{{ eua.value }}</small>
                 </div>
               </div>
-              <div class="d-flex flex-column text-success text-end">
-                <small class="fs-6">+0,78%</small>
-                <small class="fs-6">+273,38</small>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div
-              class="rounded-2 border border-dark p-1 d-flex justify-content-between gap-2 bg-body"
-            >
-              <div class="d-flex align-items-start gap-2">
-                <div
-                  class="wh-tab-bg-icon d-flex justify-content-center m-0 mt-1 align-items-center p-0 rounded-3 text-success wh-tab-bg-icon-green"
-                >
-                  <i class="material-icons fs-5">arrow_upward</i>
-                </div>
-                <div class="d-flex flex-column">
-                  <small class="text-light">S&P 500</small>
-                  <small class="fs-6">4.546,54</small>
-                </div>
-              </div>
-              <div class="d-flex flex-column text-success text-end">
-                <small class="fs-6">+0,69%</small>
-                <small class="fs-6">+30,99</small>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div
-              class="rounded-2 border border-dark p-1 d-flex justify-content-between gap-2 bg-body"
-            >
-              <div class="d-flex align-items-start gap-2">
-                <div
-                  class="wh-tab-bg-icon d-flex justify-content-center m-0 mt-1 align-items-center p-0 rounded-3 text-success wh-tab-bg-icon-green"
-                >
-                  <i class="material-icons fs-5">arrow_upward</i>
-                </div>
-                <div class="d-flex flex-column">
-                  <small class="text-light">Nasdaq</small>
-                  <small class="fs-6">14.346,00</small>
-                </div>
-              </div>
-              <div class="d-flex flex-column text-success text-end">
-                <small class="fs-6">+0,75%</small>
-                <small class="fs-6">+106,12</small>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div
-              class="rounded-2 border border-dark p-1 d-flex justify-content-between gap-2 bg-body"
-            >
-              <div class="d-flex align-items-start gap-2">
-                <div
-                  class="wh-tab-bg-icon d-flex justify-content-center m-0 mt-1 align-items-center p-0 rounded-3 text-success wh-tab-bg-icon-green"
-                >
-                  <i class="material-icons fs-5">arrow_upward</i>
-                </div>
-                <div class="d-flex flex-column">
-                  <small class="text-light">Russell 2000</small>
-                  <small class="fs-6">2.050,74</small>
-                </div>
-              </div>
-              <div class="d-flex flex-column text-success text-end">
-                <small class="fs-6">+1,10%</small>
-                <small class="fs-6">+22,29</small>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div
-              class="rounded-2 border border-dark p-1 d-flex justify-content-between gap-2 bg-body"
-            >
-              <div class="d-flex align-items-start gap-2">
-                <div
-                  class="wh-tab-bg-icon d-flex justify-content-center m-0 mt-1 align-items-center p-0 rounded-3 text-danger wh-tab-bg-icon-danger"
-                >
-                  <i class="material-icons fs-5">arrow_downward</i>
-                </div>
-                <div class="d-flex flex-column">
-                  <small class="text-light">VIX</small>
-                  <small class="fs-6">21,96</small>
-                </div>
-              </div>
-              <div class="d-flex flex-column text-danger text-end">
-                <small class="fs-6">-11,56%</small>
-                <small class="fs-6">-2,87</small>
+              <div
+                class="d-flex flex-column text-success text-end"
+                [ngClass]="{
+                  'text-success': eua.icon === 'arrow_upward',
+                  'text-danger': eua.icon === 'arrow_downward'
+                }"
+              >
+                <small class="fs-6">{{ eua.percentage }}</small>
+                <small class="fs-6">{{ eua.PercentagePoint }}</small>
               </div>
             </div>
           </li>
@@ -193,7 +121,43 @@
         role="tabpanel"
         aria-labelledby="nav-europe-tab"
       >
-        Funcionou
+        <ul
+          class="list-unstyled row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-5 justify-content-center g-2"
+        >
+          <li *ngFor="let europe of listDataEurope">
+            <div
+              class="rounded-2 border border-dark p-1 d-flex justify-content-between gap-2 bg-body"
+            >
+              <div class="d-flex align-items-start gap-2">
+                <div
+                  class="wh-tab-bg-icon d-flex justify-content-center m-0 mt-1 align-items-center p-0 rounded-3"
+                  [ngClass]="{
+                    'text-success wh-tab-bg-icon-green':
+                      europe.icon === 'arrow_upward',
+                    'text-danger wh-tab-bg-icon-danger':
+                      europe.icon === 'arrow_downward'
+                  }"
+                >
+                  <i class="material-icons fs-5">{{ europe.icon }}</i>
+                </div>
+                <div class="d-flex flex-column">
+                  <small class="text-light">{{ europe.name }}</small>
+                  <small class="fs-6">{{ europe.value }}</small>
+                </div>
+              </div>
+              <div
+                class="d-flex flex-column text-success text-end"
+                [ngClass]="{
+                  'text-success': europe.icon === 'arrow_upward',
+                  'text-danger': europe.icon === 'arrow_downward'
+                }"
+              >
+                <small class="fs-6">{{ europe.percentage }}</small>
+                <small class="fs-6">{{ europe.PercentagePoint }}</small>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
       <div
         class="tab-pane fade"
@@ -201,7 +165,43 @@
         role="tabpanel"
         aria-labelledby="nav-asia-tab"
       >
-        A Tab
+        <ul
+          class="list-unstyled row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-5 justify-content-center g-2"
+        >
+          <li *ngFor="let asia of listDataAsia">
+            <div
+              class="rounded-2 border border-dark p-1 d-flex justify-content-between gap-2 bg-body"
+            >
+              <div class="d-flex align-items-start gap-2">
+                <div
+                  class="wh-tab-bg-icon d-flex justify-content-center m-0 mt-1 align-items-center p-0 rounded-3"
+                  [ngClass]="{
+                    'text-success wh-tab-bg-icon-green':
+                      asia.icon === 'arrow_upward',
+                    'text-danger wh-tab-bg-icon-danger':
+                      asia.icon === 'arrow_downward'
+                  }"
+                >
+                  <i class="material-icons fs-5">{{ asia.icon }}</i>
+                </div>
+                <div class="d-flex flex-column">
+                  <small class="text-light">{{ asia.name }}</small>
+                  <small class="fs-6">{{ asia.value }}</small>
+                </div>
+              </div>
+              <div
+                class="d-flex flex-column text-success text-end"
+                [ngClass]="{
+                  'text-success': asia.icon === 'arrow_upward',
+                  'text-danger': asia.icon === 'arrow_downward'
+                }"
+              >
+                <small class="fs-6">{{ asia.percentage }}</small>
+                <small class="fs-6">{{ asia.PercentagePoint }}</small>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
       <div
         class="tab-pane fade"
@@ -209,7 +209,31 @@
         role="tabpanel"
         aria-labelledby="nav-coin-tab"
       >
-        De novo
+        <ul
+          class="list-unstyled row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-5 justify-content-center g-2"
+        >
+          <li *ngFor="let coin of listDataCoin">
+            <div
+              class="rounded-2 border border-dark p-1 d-flex justify-content-between gap-2 bg-body"
+            >
+              <div class="d-flex align-items-start gap-2">
+                <div
+                  class="wh-tab-bg-icon d-flex justify-content-center m-0 mt-1 align-items-center p-0 rounded-3 bg-white bg-opacity-10 text-light text-opacity-50"
+                >
+                  <i class="material-icons fs-5">{{ coin.icon }}</i>
+                </div>
+                <div class="d-flex flex-column">
+                  <small class="text-light">{{ coin.name }}</small>
+                  <small class="fs-6">{{ coin.value }}</small>
+                </div>
+              </div>
+              <div class="d-flex flex-column text-end">
+                <small class="fs-6">{{ coin.percentage }}</small>
+                <small class="fs-6">{{ coin.PercentagePoint }}</small>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
       <div
         class="tab-pane fade"
@@ -217,10 +241,48 @@
         role="tabpanel"
         aria-labelledby="nav-crypto-tab"
       >
-        E de novo
+        <ul
+          class="list-unstyled row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-5 justify-content-center g-2"
+        >
+          <li *ngFor="let crypto of listDataCrypto">
+            <div
+              class="rounded-2 border border-dark p-1 d-flex justify-content-between gap-2 bg-body"
+            >
+              <div class="d-flex align-items-start gap-2">
+                <div
+                  class="wh-tab-bg-icon d-flex justify-content-center m-0 mt-1 align-items-center p-0 rounded-3"
+                  [ngClass]="{
+                    'text-success wh-tab-bg-icon-green':
+                      crypto.icon === 'arrow_upward',
+                    'text-danger wh-tab-bg-icon-danger':
+                      crypto.icon === 'arrow_downward'
+                  }"
+                >
+                  <i class="material-icons fs-5">{{ crypto.icon }}</i>
+                </div>
+                <div class="d-flex flex-column">
+                  <small class="text-light">{{ crypto.name }}</small>
+                  <small class="fs-6">{{ crypto.value }}</small>
+                </div>
+              </div>
+              <div
+                class="d-flex flex-column text-success text-end"
+                [ngClass]="{
+                  'text-success': crypto.icon === 'arrow_upward',
+                  'text-danger': crypto.icon === 'arrow_downward'
+                }"
+              >
+                <small class="fs-6">{{ crypto.percentage }}</small>
+                <small class="fs-6">{{ crypto.PercentagePoint }}</small>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="mx-auto col-12 cols-sm-8 col-lg-6 col-xxl-5 position-relative">
+    <div
+      class="mx-auto col-12 col-sm-8 col-lg-6 col-xxl-5 position-relative mt-4"
+    >
       <input
         type="text"
         class="form-control rounded-pill py-3 px-5 border-dark"

@@ -18,3 +18,22 @@ body {
 .bg-blue-teal {
   background-color: $teal;
 }
+
+.toast-success-dark {
+  background-color: var(--color-dark-2) !important;
+  box-shadow: none !important;
+  border: 0.0625rem solid $dark;
+}
+
+.toast-container .ngx-toastr {
+  padding: 0.9375rem !important;
+  width: 20rem !important;
+  display: flex !important;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 0.9375rem;
+}
+.toast-progress {
+  background-color: $green !important;
+  opacity: 0.8 !important;
+}
