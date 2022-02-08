@@ -7,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   listImages: any[] = [];
+  sidebar: boolean;
+
+  constructor() {
+    this.sidebar = false;
+  }
+
+  openSidebar() {
+    this.sidebar = true;
+  }
 
   ngOnInit(): void {
     this.listImages.push(

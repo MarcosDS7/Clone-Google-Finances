@@ -1,6 +1,7 @@
 <section class="d-flex justify-content-between align-items-center p-2">
   <div class="d-flex align-items-center">
     <button
+      (click)="openSidebar()"
       class="btn d-flex p-2 mx-1 shadow-none rounded-circle hover-bg-gray"
     >
       <i class="material-icons text-white" title="Ícone de menu">menu</i>
@@ -146,3 +147,11 @@
     </div>
   </div>
 </section>
+<!-- SIDEBAR  -->
+<aside
+  class="sidebar position-absolute h-100 min-vh-100 top-0 start-0 d-flex flex-column"
+  [ngClass]="{
+    'visually-hidden': sidebar === false,
+    visible: sidebar === false
+  }"
+></aside>
