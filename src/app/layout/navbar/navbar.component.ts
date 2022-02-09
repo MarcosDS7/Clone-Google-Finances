@@ -17,6 +17,10 @@ export class NavbarComponent implements OnInit {
     this.sidebar = true;
   }
 
+  closeSidebar() {
+    this.sidebar = false;
+  }
+
   ngOnInit(): void {
     this.listImages.push(
       {
