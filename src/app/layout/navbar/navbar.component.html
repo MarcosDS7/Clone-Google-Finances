@@ -149,9 +149,29 @@
 </section>
 <!-- SIDEBAR  -->
 <aside
-  class="sidebar position-absolute h-100 min-vh-100 top-0 start-0 d-flex flex-column"
+  class="sidebar position-absolute h-100 min-vh-100 top-0 start-0 d-flex flex-column py-4"
   [ngClass]="{
-    'visually-hidden': sidebar === false,
-    visible: sidebar === false
+    'transform-out': sidebar === false,
+    'transform-in': sidebar === true
   }"
-></aside>
+>
+  <div class="d-flex align-items-center justify-content-between">
+    <a
+      class="d-flex align-items-center text-decoration-none ps-4"
+      [routerLink]="['/']"
+    >
+      <img
+        class="d-block wh-logo-google"
+        src="./assets/img/google.svg"
+        alt="Logo do google"
+      />
+      <p class="mb-0 ms-2 font-monospace fw-medium fs-5 text-light">Finanças</p>
+    </a>
+    <button
+      class="btn shadow-none d-flex mt-1 text-light text-opacity-50"
+      (click)="closeSidebar()"
+    >
+      <i class="material-icons fs-4">close</i>
+    </button>
+  </div>
+</aside>

@@ -4,34 +4,43 @@
   height: 1.5rem;
   width: 4.625rem;
 }
+
 .wh-user-google {
   width: 2rem;
   height: 2rem;
 }
+
 .wh-user-google-expanded {
   height: 4.375rem;
   width: 4.375rem;
 }
+
 .wh-img-user-google-2 {
   width: 2.25rem;
   height: 2.25rem;
 }
+
 .wh-img-item-app {
   height: 2.1875rem;
   width: 2.1875rem;
 }
+
 .wh-card-account {
   max-width: 22.125rem !important;
 }
+
 .dropdown-menu {
   background-color: var(--color-dark-1);
 }
+
 .hover-bg-gray:hover {
   background-color: rgba($color: $white, $alpha: 0.1);
 }
+
 .hover-bg-dark:hover {
   background-color: rgba($color: $dark, $alpha: 0.3);
 }
+
 // Sidebar
 .sidebar {
   overflow-x: hidden;
@@ -40,4 +49,12 @@
   box-shadow: 0 0 1rem rgb(0 0 0 / 28%);
   transition: all ease 0.25s;
   background: var(--color-dark-2);
+}
+
+.transform-out {
+  transform: translateX(-16rem);
+}
+
+.transform-in {
+  transform: translateX(0);
 }

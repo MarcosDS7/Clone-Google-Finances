@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -15,6 +14,10 @@ export class NavbarComponent implements OnInit {
 
   openSidebar() {
     this.sidebar = true;
+  }
+
+  closeSidebar() {
+    this.sidebar = false;
   }
 
   ngOnInit(): void {
