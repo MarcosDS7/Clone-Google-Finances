@@ -58,3 +58,11 @@
 .transform-in {
   transform: translateX(0);
 }
+
+.hover-bg-item-sidebar:nth-child(1):hover {
+  color: $blue !important;
+}
+
+.hover-bg-item-sidebar:nth-child(n + 2):hover {
+  background: rgba($color: $body-bg, $alpha: 0.4) !important;
+}
