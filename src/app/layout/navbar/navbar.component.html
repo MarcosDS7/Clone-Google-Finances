@@ -149,13 +149,13 @@
 </section>
 <!-- SIDEBAR  -->
 <aside
-  class="sidebar position-absolute h-100 min-vh-100 top-0 start-0 d-flex flex-column py-3"
+  class="sidebar position-absolute h-100 min-vh-100 top-0 start-0 d-flex flex-column pt-3"
   [ngClass]="{
     'transform-out': sidebar === false,
     'transform-in': sidebar === true
   }"
 >
-  <div class="d-flex align-items-center justify-content-between">
+  <header class="d-flex align-items-center justify-content-between">
     <a
       class="d-flex align-items-center text-decoration-none ps-4"
       [routerLink]="['/']"
@@ -173,24 +173,89 @@
     >
       <i class="material-icons fs-4">close</i>
     </button>
-  </div>
+  </header>
   <section class="pt-4 pe-3">
     <div class="pb-2">
       <a
         [routerLink]="['/']"
-        class="d-flex gap-3 hover-bg-item-sidebar align-items-center text-decoration-none ps-4 py-2 rounded-start rounded-pill bg-body text-blue-0 bg-opacity-75"
+        class="d-flex gap-3 hover-bg-item-sidebar align-items-center text-decoration-none ps-4 py-2 rounded-start rounded-pill bg-body text-blue-0 bg-opacity-75 active"
       >
         <i class="material-icons-outlined fs-4 py-1">signal_cellular_alt</i>
         <small class="py-1 font-monospace fw-medium">Página inicial</small>
       </a>
       <a
         [routerLink]="['/']"
-        class="d-flex gap-3 hover-bg-item-sidebar align-items-center text-decoration-none ps-4 py-2 rounded-start rounded-pill text-light text-opacity-50"
+        class="d-flex gap-3 hover-bg-item-sidebar align-items-center text-decoration-none ps-4 py-2 rounded-start rounded-pill text-light text-opacity-75"
       >
         <i class="material-icons-outlined fs-4 py-1">manage_search</i>
         <small class="py-1 font-monospace">Tendências de mercado</small>
       </a>
     </div>
     <hr class="bg-dark m-0" />
+    <div class="py-1">
+      <div class="d-flex align-items-center justify-content-between ps-4 pt-2">
+        <small class="m-0 fs-7">PORTFÓLIOS</small>
+        <button class="d-flex btn p-2 hover-bg-item-sidebar rounded-pill">
+          <i class="material-icons-outlined text-blue-0 fs-4">add</i>
+        </button>
+      </div>
+      <a
+        [routerLink]="['/']"
+        class="d-flex gap-3 hover-bg-item-sidebar align-items-center text-decoration-none ps-4 py-2 rounded-start rounded-pill text-light text-opacity-75"
+      >
+        <i class="material-icons-outlined fs-4 py-1">insert_chart</i>
+        <small class="py-1 font-monospace">Minha carteira</small>
+      </a>
+    </div>
+    <div class="pb-2">
+      <div class="d-flex align-items-center justify-content-between ps-4 pt-2">
+        <small class="m-0 fs-7">LISTA DE INTERESSES</small>
+        <button class="d-flex btn p-2 hover-bg-item-sidebar rounded-pill">
+          <i class="material-icons-outlined text-blue-0 fs-4">add</i>
+        </button>
+      </div>
+      <a
+        [routerLink]="['/']"
+        class="d-flex gap-3 hover-bg-item-sidebar align-items-center text-decoration-none ps-4 py-2 rounded-start rounded-pill text-light text-opacity-75"
+      >
+        <i class="material-icons-outlined fs-4 py-1 transform-rotate">toc</i>
+        <small class="py-1 font-monospace">Lista de interesses</small>
+      </a>
+    </div>
+    <hr class="bg-dark m-0" />
+    <div class="pt-3">
+      <div class="ps-4 pt-1">
+        <small class="m-0 fs-7">MAIS ATIVAS</small>
+      </div>
+      <ul class="list-unstyled my-2">
+        <li *ngFor="let actives of listActives">
+          <a
+            [routerLink]="['/']"
+            class="d-flex justify-content-between gap-3 hover-bg-item-sidebar align-items-center text-decoration-none ps-4 py-2 rounded-start rounded-pill text-light text-opacity-75 pe-2"
+          >
+            <div class="d-flex align-items-center gap-2">
+              <i
+                class="material-icons-outlined fs-6 bg-body rounded-circle p-2 bg-opacity-50"
+                >trending_flat</i
+              >
+              <small class="py-1 font-monospace">{{ actives.name }}</small>
+            </div>
+            <small class="py-1 font-monospace">{{ actives.value }}</small>
+          </a>
+        </li>
+      </ul>
+      <hr class="bg-dark m-0 mt-1" />
+    </div>
+    <div class="py-2">
+      <a
+        [routerLink]="['/']"
+        class="d-flex gap-3 hover-bg-item-sidebar align-items-center text-decoration-none ps-4 py-2 rounded-start rounded-pill text-light text-opacity-75"
+      >
+        <i class="material-icons-outlined fs-4 py-1 transform-rotate"
+          >feedback</i
+        >
+        <small class="py-1 font-monospace">Enviar Feedback</small>
+      </a>
+    </div>
   </section>
 </aside>
