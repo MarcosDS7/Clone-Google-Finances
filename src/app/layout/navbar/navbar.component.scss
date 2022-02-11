@@ -45,24 +45,43 @@
 .sidebar {
   overflow-x: hidden;
   z-index: 990;
-  width: 16rem;
+  width: 17rem;
   box-shadow: 0 0 1rem rgb(0 0 0 / 28%);
   transition: all ease 0.25s;
   background: var(--color-dark-2);
 }
 
 .transform-out {
-  transform: translateX(-16rem);
+  transform: translateX(-17rem);
 }
 
 .transform-in {
   transform: translateX(0);
 }
 
-.hover-bg-item-sidebar:nth-child(1):hover {
-  color: $blue !important;
+.hover-bg-item-sidebar:hover {
+  background: rgba($color: $body-bg, $alpha: 0.4) !important;
 }
 
-.hover-bg-item-sidebar:nth-child(n + 2):hover {
-  background: rgba($color: $body-bg, $alpha: 0.4) !important;
+.hover-bg-item-sidebar.active {
+  color: $blue !important;
+  background: rgba($color: $body-bg, $alpha: 0.75) !important;
+}
+
+// Scroll
+aside::-webkit-scrollbar {
+  width: 6px; /* width of the entire scrollbar */
+}
+aside::-webkit-scrollbar-track {
+  background: rgba(
+    $color: $body-bg,
+    $alpha: 0.2
+  ); /* color of the tracking area */
+}
+aside::-webkit-scrollbar-thumb {
+  background-color: rgba(
+    $color: $blue,
+    $alpha: 0.2
+  ); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
 }

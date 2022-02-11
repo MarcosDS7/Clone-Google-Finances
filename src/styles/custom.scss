@@ -11,6 +11,14 @@ body {
   font-weight: var(--text-medium);
 }
 
+.transform-rotate {
+  transform: rotate(180deg);
+}
+
+.fs-7 {
+  font-size: 12px;
+}
+
 .text-blue-0 {
   color: $blue;
 }
@@ -33,6 +41,7 @@ body {
   align-items: center;
   gap: 0.9375rem;
 }
+
 .toast-progress {
   background-color: $green !important;
   opacity: 0.8 !important;

@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   listImages: any[] = [];
+  listActives: any[] = [];
   sidebar: boolean;
 
   constructor() {
@@ -46,6 +47,32 @@ export class NavbarComponent implements OnInit {
       {
         url: 'google-play.svg',
         name: 'Play',
+      }
+    );
+    this.listActives.push(
+      {
+        name: 'Magazine Luiza',
+        value: '0,00%',
+      },
+      {
+        name: 'Oi',
+        value: '0,00%',
+      },
+      {
+        name: 'Via',
+        value: '0,00%',
+      },
+      {
+        name: 'Bradesco',
+        value: '0,00%',
+      },
+      {
+        name: 'Itaú Unibanco',
+        value: '0,00%',
+      },
+      {
+        name: 'Meliuz SA',
+        value: '0,00%',
       }
     );
   }
