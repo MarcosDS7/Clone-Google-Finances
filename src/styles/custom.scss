@@ -11,20 +11,12 @@ body {
   font-weight: var(--text-medium);
 }
 
-.transform-rotate {
-  transform: rotate(180deg);
-}
-
 .fs-7 {
   font-size: 12px;
 }
 
-.text-blue-0 {
-  color: $blue;
-}
-
-.bg-blue-teal {
-  background-color: $teal;
+.transform-rotate {
+  transform: rotate(180deg);
 }
 
 .toast-success-dark {

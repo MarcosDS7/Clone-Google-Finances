@@ -1,6 +1,6 @@
 @import "../../../styles/variables";
 
-.hero {
+.hero__hero--background {
   background: url("../../../assets/img/bg-google-dark.svg") no-repeat center
     center;
   background-size: cover;
@@ -11,15 +11,15 @@
   background-color: rgba($color: $dark, $alpha: 0.4);
 }
 
-.wh-tab-bg-icon {
+.hero__tab--width {
   width: 2.1875rem;
   height: 2.1875rem;
 }
 
-.wh-tab-bg-icon-green {
+.hero__tab--background-green {
   background-color: #12554d30;
 }
 
-.wh-tab-bg-icon-danger {
+.hero__tab--background-danger {
   background-color: #c9312e20;
 }
