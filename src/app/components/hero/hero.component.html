@@ -1,5 +1,5 @@
 <article
-  class="d-flex justify-content-center align-items-center p-4 hero w-100"
+  class="d-flex justify-content-center align-items-center p-4 hero__hero--background w-100"
 >
   <section class="container-lg p-0">
     <nav>
@@ -86,11 +86,11 @@
             >
               <div class="d-flex align-items-start gap-2">
                 <div
-                  class="wh-tab-bg-icon d-flex justify-content-center m-0 mt-1 align-items-center p-0 rounded-3"
+                  class="hero__tab--width d-flex justify-content-center m-0 mt-1 align-items-center p-0 rounded-3"
                   [ngClass]="{
-                    'text-success wh-tab-bg-icon-green':
+                    'text-success hero__tab--background-green':
                       eua.icon === 'arrow_upward',
-                    'text-danger wh-tab-bg-icon-danger':
+                    'text-danger hero__tab--background-danger':
                       eua.icon === 'arrow_downward'
                   }"
                 >
@@ -130,11 +130,11 @@
             >
               <div class="d-flex align-items-start gap-2">
                 <div
-                  class="wh-tab-bg-icon d-flex justify-content-center m-0 mt-1 align-items-center p-0 rounded-3"
+                  class="hero__tab--width d-flex justify-content-center m-0 mt-1 align-items-center p-0 rounded-3"
                   [ngClass]="{
-                    'text-success wh-tab-bg-icon-green':
+                    'text-success hero__tab--background-green':
                       europe.icon === 'arrow_upward',
-                    'text-danger wh-tab-bg-icon-danger':
+                    'text-danger hero__tab--background-danger':
                       europe.icon === 'arrow_downward'
                   }"
                 >
@@ -174,11 +174,11 @@
             >
               <div class="d-flex align-items-start gap-2">
                 <div
-                  class="wh-tab-bg-icon d-flex justify-content-center m-0 mt-1 align-items-center p-0 rounded-3"
+                  class="hero__tab--width d-flex justify-content-center m-0 mt-1 align-items-center p-0 rounded-3"
                   [ngClass]="{
-                    'text-success wh-tab-bg-icon-green':
+                    'text-success hero__tab--background-green':
                       asia.icon === 'arrow_upward',
-                    'text-danger wh-tab-bg-icon-danger':
+                    'text-danger hero__tab--background-danger':
                       asia.icon === 'arrow_downward'
                   }"
                 >
@@ -218,7 +218,7 @@
             >
               <div class="d-flex align-items-start gap-2">
                 <div
-                  class="wh-tab-bg-icon d-flex justify-content-center m-0 mt-1 align-items-center p-0 rounded-3 bg-white bg-opacity-10 text-light text-opacity-50"
+                  class="hero__tab--width d-flex justify-content-center m-0 mt-1 align-items-center p-0 rounded-3 bg-white bg-opacity-10 text-light text-opacity-50"
                 >
                   <i class="material-icons fs-5">{{ coin.icon }}</i>
                 </div>
@@ -250,11 +250,11 @@
             >
               <div class="d-flex align-items-start gap-2">
                 <div
-                  class="wh-tab-bg-icon d-flex justify-content-center m-0 mt-1 align-items-center p-0 rounded-3"
+                  class="hero__tab--width d-flex justify-content-center m-0 mt-1 align-items-center p-0 rounded-3"
                   [ngClass]="{
-                    'text-success wh-tab-bg-icon-green':
+                    'text-success hero__tab--background-green':
                       crypto.icon === 'arrow_upward',
-                    'text-danger wh-tab-bg-icon-danger':
+                    'text-danger hero__tab--background-danger':
                       crypto.icon === 'arrow_downward'
                   }"
                 >
@@ -284,8 +284,8 @@
       class="mx-auto col-12 col-sm-8 col-lg-6 col-xxl-5 position-relative mt-4"
     >
       <input
-        type="text"
         class="form-control rounded-pill py-3 px-5 border-dark"
+        type="text"
         placeholder="Pesquisar ações, ETFs e outros para comparar"
       />
       <i class="material-icons m-3 position-absolute start-0 top-0">search</i>
