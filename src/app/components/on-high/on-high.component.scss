@@ -1,0 +1,21 @@
+@import "../../../styles/variables";
+
+.onHigh__actionCode_container {
+  width: 3.4375rem;
+  height: 1.25rem;
+}
+
+.onHigh__actionCodePercentage_container {
+  width: 4.375rem;
+  height: 1.875rem;
+}
+
+.onHigh__actionCodeFollow_hover:hover {
+  color: $blue !important;
+  cursor: pointer;
+}
+
+.onHigh__list--hover:hover {
+  background-color: rgba(3, 3, 5, 0.1);
+  cursor: pointer;
+}

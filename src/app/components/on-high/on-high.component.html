@@ -1,0 +1,55 @@
+<section class="p-4 w-100">
+  <div class="container-lg p-0">
+    <p class="mb-2 font-monospace text-light">Em alta nas suas listas</p>
+    <ul class="list-unstyled m-0">
+      <li
+        *ngFor="let item of actionsHighList"
+        class="border-top border-dark py-2 d-flex flex-column flex-sm-row align-items-sm-center justify-content-between onHigh__list--hover"
+      >
+        <div class="d-flex align-items-center gap-2">
+          <p
+            [ngClass]="{
+              'bg-red-1': item.code === 'CASH3',
+              'bg-blue-3': item.code === 'MGLU3',
+              'bg-dark': item.code === 'BCFF11',
+              'bg-blue-2': item.code === 'VIIA3',
+              'bg-green-1': item.code === 'UNIP6',
+              'bg-green-3': item.code === 'CSAN3'
+            }"
+            class="fs-7 d-flex justify-content-center align-items-center rounded text-white text-uppercase m-0 onHigh__actionCode_container"
+          >
+            {{ item.code }}
+          </p>
+          <small class="text-opacity-75 text-light">{{ item.name }}</small>
+        </div>
+        <div
+          class="d-flex justify-content-end align-items-center gap-3 gap-md-5"
+        >
+          <small class="text-opacity-75 text-light"
+            >R$ {{ item.currentValue }}</small
+          >
+          <small class="text-success">{{ item.variation }}</small>
+          <div class="d-flex align-items-center gap-2">
+            <small
+              class="text-success d-flex justify-content-center align-items-center gap-1 rounded onHigh__actionCodePercentage_container"
+              [ngClass]="{
+                'text-success background-green-opacity':
+                  item.icon === 'arrow_upward',
+                'text-danger background-danger-opacity':
+                  item.icon === 'arrow_downward'
+              }"
+            >
+              <i class="material-icons fs-6">{{ item.icon }}</i>
+              {{ item.percentage }}</small
+            >
+            <small
+              class="p-1 onHigh__actionCodeFollow_hover text-light text-opacity-25"
+            >
+              <i class="bi bi-check-circle-fill fs-5 d-flex"></i>
+            </small>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>

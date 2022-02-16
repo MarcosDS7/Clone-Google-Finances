@@ -12,6 +12,11 @@ export class NavbarComponent implements OnInit {
 
   constructor() {
     this.sidebar = false;
+    window.onscroll = () => {
+      if (this.sidebar === true) {
+        this.sidebar = false;
+      }
+    };
   }
 
   openSidebar() {
