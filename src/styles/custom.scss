@@ -38,3 +38,31 @@ body {
   background-color: $green !important;
   opacity: 0.8 !important;
 }
+
+.background-green-opacity {
+  background-color: #12554d30;
+}
+
+.background-danger-opacity {
+  background-color: #c9312e20;
+}
+
+.bg-red-1 {
+  background: var(--color-red-2);
+}
+
+.bg-blue-3 {
+  background: var(--color-blue-3);
+}
+
+.bg-blue-2 {
+  background: var(--color-blue-2);
+}
+
+.bg-green-1 {
+  background: var(--color-green-1);
+}
+
+.bg-green-3 {
+  background: var(--color-green-3);
+}
