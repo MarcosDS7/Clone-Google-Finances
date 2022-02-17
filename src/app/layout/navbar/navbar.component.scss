@@ -34,14 +34,6 @@
   background-color: var(--color-dark-1);
 }
 
-.hover-bg-gray:hover {
-  background-color: rgba($color: $white, $alpha: 0.1);
-}
-
-.hover-bg-dark:hover {
-  background-color: rgba($color: $dark, $alpha: 0.3);
-}
-
 .navbar__sidebar--config {
   overflow-x: hidden;
   z-index: 990;

@@ -1,0 +1,11 @@
+.app__section--grid {
+  display: grid;
+  grid-template-columns: 1fr 30%;
+  gap: 1.25rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .app__section--grid {
+    grid-template-columns: 1fr;
+  }
+}

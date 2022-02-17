@@ -7,10 +7,15 @@ import { HeroComponent } from './components/hero/hero.component';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OnHighComponent } from './components/on-high/on-high.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
+import { YourWalletsComponent } from './components/your-wallets/your-wallets.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, HeroComponent, OnHighComponent],
+  declarations: [AppComponent, NavbarComponent, HeroComponent, OnHighComponent, YourWalletsComponent],
   imports: [
+    FormsModule,
+    NgbModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
