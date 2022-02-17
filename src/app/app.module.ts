@@ -7,10 +7,14 @@ import { HeroComponent } from './components/hero/hero.component';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OnHighComponent } from './components/on-high/on-high.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent, NavbarComponent, HeroComponent, OnHighComponent],
   imports: [
+    FormsModule,
+    NgbModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
