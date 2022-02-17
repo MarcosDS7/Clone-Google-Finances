@@ -3,7 +3,7 @@
     <p class="mb-2 font-monospace text-light">Em alta nas suas listas</p>
     <ul class="list-unstyled m-0">
       <li
-        *ngFor="let item of actionsHighList"
+        *ngFor="let item of actionsHighList; let i = index"
         class="border-top border-dark py-2 d-flex align-items-sm-center justify-content-between onHigh__list--hover gap-3"
       >
         <div class="d-flex flex-column flex-sm-row align-items-sm-center gap-2">
@@ -45,13 +45,14 @@
               {{ item.percentage }}</small
             >
             <small
-              class="p-1 onHigh__actionCodeFollow_hover text-light text-opacity-25"
+              class="p-1 onHigh__actionCodeFollow_hover position-relative"
             >
-              <i
-                class="bi bi-check-circle-fill fs-5 d-flex"
-                placement="bottom"
-                ngbTooltip="Tooltip on bottom"
-              ></i>
+              <i class="bi bi-check-circle-fill fs-5 d-flex"></i>
+              <div
+                class="rounded p-1 text-center position-absolute bg-body border border-dark shadow"
+              >
+                <small class="fs-7">Seguindo</small>
+              </div>
             </small>
           </div>
         </div>
