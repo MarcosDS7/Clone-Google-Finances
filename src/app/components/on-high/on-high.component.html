@@ -4,9 +4,9 @@
     <ul class="list-unstyled m-0">
       <li
         *ngFor="let item of actionsHighList"
-        class="border-top border-dark py-2 d-flex flex-column flex-sm-row align-items-sm-center justify-content-between onHigh__list--hover"
+        class="border-top border-dark py-2 d-flex align-items-sm-center justify-content-between onHigh__list--hover gap-3"
       >
-        <div class="d-flex align-items-center gap-2">
+        <div class="d-flex flex-column flex-sm-row align-items-sm-center gap-2">
           <p
             [ngClass]="{
               'bg-red-1': item.code === 'CASH3',
@@ -28,7 +28,9 @@
           <small class="text-opacity-75 text-light"
             >R$ {{ item.currentValue }}</small
           >
-          <small class="text-success">{{ item.variation }}</small>
+          <small class="text-success d-none d-sm-inline">{{
+            item.variation
+          }}</small>
           <div class="d-flex align-items-center gap-2">
             <small
               class="text-success d-flex justify-content-center align-items-center gap-1 rounded onHigh__actionCodePercentage_container"
