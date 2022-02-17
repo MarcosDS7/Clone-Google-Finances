@@ -19,6 +19,14 @@ body {
   transform: rotate(180deg);
 }
 
+.hover-bg-gray:hover {
+  background-color: rgba($color: $white, $alpha: 0.1);
+}
+
+.hover-bg-dark:hover {
+  background-color: rgba($color: $dark, $alpha: 0.3);
+}
+
 .toast-success-dark {
   background-color: var(--color-dark-2) !important;
   box-shadow: none !important;
