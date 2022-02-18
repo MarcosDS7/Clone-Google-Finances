@@ -10,9 +10,19 @@ import { OnHighComponent } from './components/on-high/on-high.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { YourWalletsComponent } from './components/your-wallets/your-wallets.component';
+import { TrendComponent } from './components/trend/trend.component';
+import { YourListsComponent } from './components/your-lists/your-lists.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, HeroComponent, OnHighComponent, YourWalletsComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    HeroComponent,
+    OnHighComponent,
+    YourWalletsComponent,
+    TrendComponent,
+    YourListsComponent,
+  ],
   imports: [
     FormsModule,
     NgbModule,

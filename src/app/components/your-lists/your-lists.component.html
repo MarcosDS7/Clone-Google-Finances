@@ -1,0 +1,44 @@
+<section class="mt-4 pt-3">
+  <small class="text-light mb-3 d-block">SUAS LISTAS</small>
+  <ul class="list-unstyled m-0 d-flex flex-wrap align-items-center gap-3">
+    <li>
+      <a
+        class="btn border border-dark rounded hover-bg-dark d-flex align-items-end gap-3 fs-6"
+        [routerLink]="['/']"
+      >
+        <div class="d-flex align-items-center gap-2">
+          <i
+            class="material-icons-outlined fs-5 yourList__containerIcon--container rounded bg-opacity-50 bg-dark d-flex align-items-center justify-content-center"
+            >format_list_bulleted</i
+          >
+          <span class="text-light text-opacity-50">Lista de interesses</span>
+        </div>
+        <span class="yourList__number--margin">10</span>
+      </a>
+    </li>
+    <li>
+      <a
+        class="btn border border-dark rounded hover-bg-dark d-flex align-items-end gap-3 fs-6"
+        [routerLink]="['/']"
+      >
+        <div class="d-flex align-items-center gap-2">
+          <i
+            class="material-icons-outlined fs-5 yourList__containerIcon--container rounded bg-opacity-50 bg-dark d-flex align-items-center justify-content-center"
+            >insert_chart</i
+          >
+          <span class="text-light text-opacity-50">My Wallet</span>
+        </div>
+        <span class="yourList__number--margin">7</span>
+      </a>
+    </li>
+    <li>
+      <a
+        class="btn rounded d-flex align-items-end gap-2 fs-6 text-primary yourList__newList--hover"
+        [routerLink]="['/']"
+      >
+        <i class="material-icons-outlined">add</i>
+        <span class="fw-medium">Nova lista</span>
+      </a>
+    </li>
+  </ul>
+</section>
