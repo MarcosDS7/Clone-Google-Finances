@@ -1,0 +1,14 @@
+@import "../../../styles/variables";
+
+.yourList__containerIcon--container {
+  width: 1.625rem;
+  height: 1.625rem;
+}
+
+.yourList__number--margin {
+  margin-bottom: 0.125rem;
+}
+
+.yourList__newList--hover:hover {
+  background-color: rgba($color: $blue, $alpha: 0.1);
+}

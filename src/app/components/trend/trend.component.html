@@ -1,0 +1,29 @@
+<article class="p-3 border border-dark rounded-3">
+  <header>
+    <p class="m-0 font-monospace text-light fs-6">Tendências de mercado</p>
+  </header>
+  <ul class="list-unstyled m-0 d-flex flex-wrap gap-2 mt-3 pe-3">
+    <li *ngFor="let item of trendList">
+      <a
+        class="btn border border-dark rounded-pill hover-bg-dark d-flex justify-content-center align-items-center gap-1 py-1 px-2 fs-7"
+        [routerLink]="['/']"
+      >
+        <i
+          class="material-icons-outlined fs-5"
+          [ngClass]="{
+            'text-white-50':
+              item.icon === 'stacked_line_chart' || item.icon === 'paid',
+            'text-primary': item.icon === 'equalizer',
+            'text-success':
+              item.icon === 'trending_up' ||
+              item.icon === 'energy_savings_leaf',
+            'text-danger': item.icon === 'trending_down',
+            'text-warning': item.icon === 'copyright'
+          }"
+          >{{ item.icon }}</i
+        >
+        {{ item.name }}
+      </a>
+    </li>
+  </ul>
+</article>
