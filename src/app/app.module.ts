@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { YourWalletsComponent } from './components/your-wallets/your-wallets.component';
 import { TrendComponent } from './components/trend/trend.component';
 import { YourListsComponent } from './components/your-lists/your-lists.component';
+import { InterestComponent } from './carrousel/interest/interest.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { YourListsComponent } from './components/your-lists/your-lists.component
     YourWalletsComponent,
     TrendComponent,
     YourListsComponent,
+    InterestComponent,
   ],
   imports: [
     FormsModule,
