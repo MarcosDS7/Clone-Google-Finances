@@ -28,7 +28,7 @@ export class TrendComponent implements OnInit {
       },
       {
         name: 'Líderes em sustentabilidade',
-        icon: 'energy_savings_leaf',
+        icon: 'compost',
       },
       {
         name: 'Criptomoedas',
