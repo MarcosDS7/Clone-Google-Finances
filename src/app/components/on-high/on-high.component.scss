@@ -34,3 +34,12 @@
   background-color: rgba(3, 3, 5, 0.1);
   cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+  .onHigh__actionCodeFollow_hover {
+    div {
+      left: -4.6875rem;
+      top: 0;
+    }
+  }
+}
