@@ -15,6 +15,11 @@ body {
   font-size: 0.75rem !important;
 }
 
+.object-fit-cover {
+  object-fit: cover;
+  object-position: center;
+}
+
 .transform-rotate {
   transform: rotate(180deg);
 }

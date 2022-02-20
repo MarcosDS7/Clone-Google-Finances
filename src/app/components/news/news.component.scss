@@ -1,0 +1,11 @@
+@import "../../../styles/variables";
+
+.nav a.active {
+  color: var(--color-blue-3) !important;
+  background-color: rgba($color: $dark, $alpha: 0.4);
+}
+
+.news__image--width {
+  height: 5rem;
+  width: 7.5rem;
+}

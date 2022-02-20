@@ -1,0 +1,150 @@
+<section class="w-100 mt-4">
+  <p class="mb-3 font-monospace text-light">
+    Notícias sobre o mercado financeiro de hoje
+  </p>
+  <nav>
+    <div
+      class="nav nav-tabs border-dark gap-2 pb-2"
+      id="nav-tab"
+      role="tablist"
+    >
+      <a
+        class="font-monospace fs-6 fw-medium text-light text-opacity-50 py-1 px-3 text-decoration-none rounded-pill active"
+        id="nav-main-tab"
+        data-bs-target="#nav-main"
+        data-bs-toggle="tab"
+        type="button"
+        role="tab"
+        aria-controls="nav-main"
+        aria-selected="true"
+      >
+        Principais notícias
+      </a>
+      <a
+        class="font-monospace fs-6 fw-medium text-light text-opacity-50 py-1 px-3 text-decoration-none rounded-pill"
+        id="nav-local-tab"
+        data-bs-target="#nav-local"
+        data-bs-toggle="tab"
+        type="button"
+        role="tab"
+        aria-controls="nav-local"
+        aria-selected="false"
+      >
+        Mercado local
+      </a>
+      <a
+        class="font-monospace fs-6 fw-medium text-light text-opacity-50 py-1 px-3 text-decoration-none rounded-pill"
+        id="nav-worldwide-tab"
+        data-bs-target="#nav-worldwide"
+        data-bs-toggle="tab"
+        type="button"
+        role="tab"
+        aria-controls="nav-worldwide"
+        aria-selected="false"
+      >
+        Mercados mundiais
+      </a>
+    </div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    <div
+      class="tab-pane fade show active"
+      id="nav-main"
+      role="tabpanel"
+      aria-labelledby="nav-main-tab"
+    >
+      <ul class="list-unstyled m-0">
+        <li *ngFor="let news of newsList">
+          <a
+            [routerLink]="['/']"
+            class="text-decoration-none py-3 d-flex flex-column-reverse flex-sm-row justify-content-between border-bottom border-dark gap-3"
+          >
+            <article>
+              <div class="d-flex align-items-center gap-2 fs-6 mb-2">
+                <small class="fw-medium">{{ news.source }}</small>
+                <small>▪</small>
+                <small>{{ news.hours }}</small>
+              </div>
+              <div>
+                <p class="m-0 text-light text-opacity-75 text-monospace">
+                  {{ news.news }}
+                </p>
+              </div>
+            </article>
+            <img
+              src="{{ news.image }}"
+              alt="Notícias"
+              class="d-block rounded-3 object-fit-cover news__image--width"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="nav-local"
+      role="tabpanel"
+      aria-labelledby="nav-local-tab"
+    >
+      <ul class="list-unstyled m-0">
+        <li *ngFor="let local of localList">
+          <a
+            [routerLink]="['/']"
+            class="text-decoration-none py-3 d-flex flex-column-reverse flex-sm-row justify-content-between border-bottom border-dark gap-3"
+          >
+            <article>
+              <div class="d-flex align-items-center gap-2 fs-6 mb-2">
+                <small class="fw-medium">{{ local.source }}</small>
+                <small>▪</small>
+                <small>{{ local.hours }}</small>
+              </div>
+              <div>
+                <p class="m-0 text-light text-opacity-75 text-monospace">
+                  {{ local.news }}
+                </p>
+              </div>
+            </article>
+            <img
+              src="{{ local.image }}"
+              alt="Notícias"
+              class="d-block rounded-3 object-fit-cover news__image--width"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="nav-worldwide"
+      role="tabpanel"
+      aria-labelledby="nav-worldwide-tab"
+    >
+      <ul class="list-unstyled m-0">
+        <li *ngFor="let word of worldwideList">
+          <a
+            [routerLink]="['/']"
+            class="text-decoration-none py-3 d-flex flex-column-reverse flex-sm-row justify-content-between border-bottom border-dark gap-3"
+          >
+            <article>
+              <div class="d-flex align-items-center gap-2 fs-6 mb-2">
+                <small class="fw-medium">{{ word.source }}</small>
+                <small>▪</small>
+                <small>{{ word.hours }}</small>
+              </div>
+              <div>
+                <p class="m-0 text-light text-opacity-75 text-monospace">
+                  {{ word.news }}
+                </p>
+              </div>
+            </article>
+            <img
+              src="{{ word.image }}"
+              alt="Notícias"
+              class="d-block rounded-3 object-fit-cover news__image--width"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
