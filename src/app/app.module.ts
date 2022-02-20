@@ -13,6 +13,7 @@ import { YourWalletsComponent } from './components/your-wallets/your-wallets.com
 import { TrendComponent } from './components/trend/trend.component';
 import { YourListsComponent } from './components/your-lists/your-lists.component';
 import { NewsComponent } from './components/news/news.component';
+import { ScheduleComponent } from './components/schedule/schedule.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { NewsComponent } from './components/news/news.component';
     TrendComponent,
     YourListsComponent,
     NewsComponent,
+    ScheduleComponent,
   ],
   imports: [
     FormsModule,

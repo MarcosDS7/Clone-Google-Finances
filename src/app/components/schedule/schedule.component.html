@@ -1,0 +1,30 @@
+<article class="px-3 pt-3 border border-dark rounded-3">
+  <header class="pb-2">
+    <p class="m-0 font-monospace text-light fs-6">Agenda de lucros</p>
+    <small>Com base nas principais ações e suas listas de interesses</small>
+  </header>
+  <ul class="list-unstyled m-0">
+    <li
+      class="d-flex justify-content-between align-items-center py-3 border-top border-dark gap-3"
+      *ngFor="let date of calendarList"
+    >
+      <article class="d-flex align-items-center gap-3">
+        <div
+          class="d-flex flex-column align-items-center justify-content-center text-primary bg-opacity-10 bg-primary schedule__date--width rounded"
+        >
+          <small class="fs-7">{{ date.month }}.</small>
+          <small class="fw-bold">{{ date.day }}</small>
+        </div>
+        <div class="d-flex flex-column">
+          <small class="fs-6 text-light text-opacity-75">{{ date.name }}</small>
+          <small class="fs-7 text-light text-opacity-50">
+            {{ date.date }}</small
+          >
+        </div>
+      </article>
+      <button class="btn rounded-circle p-2 d-flex hover-bg-dark" type="button">
+        <i class="material-icons-outlined">{{ date.icon }}</i>
+      </button>
+    </li>
+  </ul>
+</article>
