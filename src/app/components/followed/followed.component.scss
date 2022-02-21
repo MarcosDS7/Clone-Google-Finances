@@ -1,16 +1,16 @@
 @import "../../../styles/variables";
 
-.onHigh__actionCode_container {
+.followed__code--width {
   width: 3.4375rem;
   height: 1.25rem;
 }
 
-.onHigh__actionCodePercentage--container {
+.followed__percentage--width {
   width: 4.375rem;
   height: 1.875rem;
 }
 
-.onHigh__actionCodeFollow--hover {
+.followed__follow--hover {
   color: rgba($color: $white, $alpha: 0.15);
 
   div {
@@ -21,7 +21,7 @@
   }
 }
 
-.onHigh__actionCodeFollow--hover:hover {
+.followed__follow--hover:hover {
   color: $blue !important;
   cursor: pointer;
 
@@ -30,13 +30,8 @@
   }
 }
 
-.onHigh__list--hover:hover {
-  background-color: rgba(3, 3, 5, 0.1);
-  cursor: pointer;
-}
-
 @media only screen and (max-width: 768px) {
-  .onHigh__actionCodeFollow--hover {
+  .followed__follow--hover {
     div {
       left: -4.6875rem;
       top: 0;

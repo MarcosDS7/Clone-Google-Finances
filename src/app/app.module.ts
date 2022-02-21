@@ -14,6 +14,7 @@ import { TrendComponent } from './components/trend/trend.component';
 import { YourListsComponent } from './components/your-lists/your-lists.component';
 import { NewsComponent } from './components/news/news.component';
 import { ScheduleComponent } from './components/schedule/schedule.component';
+import { FollowedComponent } from './components/followed/followed.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ScheduleComponent } from './components/schedule/schedule.component';
     YourListsComponent,
     NewsComponent,
     ScheduleComponent,
+    FollowedComponent,
   ],
   imports: [
     FormsModule,
