@@ -26,6 +26,7 @@
     "material-design-icons": "^3.0.1",
     "ngx-toastr": "^14.2.1",
     "rxjs": "~6.6.0",
+    "swiper": "^8.0.6",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"
   },

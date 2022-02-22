@@ -15,6 +15,8 @@ import { YourListsComponent } from './components/your-lists/your-lists.component
 import { NewsComponent } from './components/news/news.component';
 import { ScheduleComponent } from './components/schedule/schedule.component';
 import { FollowedComponent } from './components/followed/followed.component';
+import { SearchComponent } from './carrousel/search/search.component';
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,7 @@ import { FollowedComponent } from './components/followed/followed.component';
     NewsComponent,
     ScheduleComponent,
     FollowedComponent,
+    SearchComponent,
   ],
   imports: [
     FormsModule,
@@ -35,6 +38,7 @@ import { FollowedComponent } from './components/followed/followed.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    SwiperModule,
     ToastrModule.forRoot({
       timeOut: 5000,
       positionClass: 'toast-bottom-right',

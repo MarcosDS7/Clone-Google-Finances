@@ -1,0 +1,52 @@
+@import "../../../styles/variables";
+
+.search__code--width {
+  width: 3.4375rem;
+  height: 1.25rem;
+}
+
+.search__card--height {
+  height: 10.125rem;
+}
+
+.search__percentage--width {
+  width: 4.375rem;
+  height: 1.875rem;
+}
+
+.p-2_5 {
+  padding: 0.625rem;
+}
+
+.search__card--hover:hover {
+  box-shadow: 0 0 0.3125rem #0009;
+}
+
+.search__follow--hover {
+  color: rgba($color: $white, $alpha: 0.15);
+
+  div {
+    display: none;
+    left: -1.1875rem;
+    top: -2.1875rem;
+    z-index: 1;
+  }
+}
+
+.search__follow--hover:hover {
+  color: $blue !important;
+  cursor: pointer;
+
+  div {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .search__follow--hover {
+    div {
+      left: -4.6875rem;
+      top: 0;
+    }
+  }
+}

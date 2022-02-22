@@ -9,32 +9,3 @@
   width: 4.375rem;
   height: 1.875rem;
 }
-
-.followed__follow--hover {
-  color: rgba($color: $white, $alpha: 0.15);
-
-  div {
-    display: none;
-    left: -1.3125rem;
-    top: 2.1875rem;
-    z-index: 1;
-  }
-}
-
-.followed__follow--hover:hover {
-  color: $blue !important;
-  cursor: pointer;
-
-  div {
-    display: flex;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .followed__follow--hover {
-    div {
-      left: -4.6875rem;
-      top: 0;
-    }
-  }
-}

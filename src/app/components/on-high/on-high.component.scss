@@ -10,36 +10,7 @@
   height: 1.875rem;
 }
 
-.onHigh__actionCodeFollow--hover {
-  color: rgba($color: $white, $alpha: 0.15);
-
-  div {
-    display: none;
-    left: -1.3125rem;
-    top: 2.1875rem;
-    z-index: 1;
-  }
-}
-
-.onHigh__actionCodeFollow--hover:hover {
-  color: $blue !important;
-  cursor: pointer;
-
-  div {
-    display: flex;
-  }
-}
-
 .onHigh__list--hover:hover {
   background-color: rgba(3, 3, 5, 0.1);
   cursor: pointer;
-}
-
-@media only screen and (max-width: 768px) {
-  .onHigh__actionCodeFollow--hover {
-    div {
-      left: -4.6875rem;
-      top: 0;
-    }
-  }
 }
