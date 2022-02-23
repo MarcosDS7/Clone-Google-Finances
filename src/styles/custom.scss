@@ -18,6 +18,10 @@ body {
   font-size: 0.75rem !important;
 }
 
+.p-2_5 {
+  padding: 0.625rem;
+}
+
 .object-fit-cover {
   object-fit: cover;
   object-position: center;
@@ -25,6 +29,10 @@ body {
 
 .transform-rotate {
   transform: rotate(180deg);
+}
+
+.cursor-move {
+  cursor: move;
 }
 
 .hover-bg-gray:hover {
@@ -111,10 +119,6 @@ body {
   opacity: 0.8 !important;
 }
 
-.swiper-wrapper {
-  padding: 0.25rem;
-}
-
 .swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -147,6 +151,44 @@ body {
 
 .swiper-button-prev {
   display: none;
+}
+
+.carrousel__code--width {
+  width: 3.4375rem;
+  height: 1.25rem;
+}
+
+.carrousel__card--height {
+  height: 10.125rem;
+}
+
+.carrousel__percentage--width {
+  width: 4.375rem;
+  height: 1.875rem;
+}
+
+.carrousel__card--hover:hover {
+  box-shadow: inset 0 0 0.3125rem rgba($color: $dark, $alpha: 0.6);
+}
+
+.carrousel__follow--hover {
+  color: rgba($color: $white, $alpha: 0.15);
+
+  div {
+    display: none;
+    left: -1.1875rem;
+    top: -2.1875rem;
+    z-index: 1;
+  }
+}
+
+.carrousel__follow--hover:hover {
+  color: $blue !important;
+  cursor: pointer;
+
+  div {
+    display: flex;
+  }
 }
 
 .follow--hover {

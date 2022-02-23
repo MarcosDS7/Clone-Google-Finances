@@ -15,8 +15,9 @@ import { YourListsComponent } from './components/your-lists/your-lists.component
 import { NewsComponent } from './components/news/news.component';
 import { ScheduleComponent } from './components/schedule/schedule.component';
 import { FollowedComponent } from './components/followed/followed.component';
-import { SearchComponent } from './carrousel/search/search.component';
+import { InterestComponent } from './carrousel/interest/interest.component';
 import { SwiperModule } from 'swiper/angular';
+import { SearchComponent } from './carrousel/search/search.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { SwiperModule } from 'swiper/angular';
     NewsComponent,
     ScheduleComponent,
     FollowedComponent,
+    InterestComponent,
     SearchComponent,
   ],
   imports: [

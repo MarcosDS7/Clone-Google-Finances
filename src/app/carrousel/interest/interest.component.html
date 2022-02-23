@@ -1,5 +1,9 @@
-<header class="mb-3 mt-4">
-  <small class="text-light text-opacity-75">Pesquisas recentes</small>
+<header class="mb-3">
+  <p class="mb-2 fs-5 text-light font-mosnospace">Saiba mais</p>
+  <div class="d-flex align-items-center gap-1 text-light text-opacity-75">
+    <small>Talvez você se interesse por</small>
+    <i class="material-icons-outlined fs-6">info</i>
+  </div>
 </header>
 <swiper
   [slidesPerView]="1"
@@ -34,25 +38,25 @@
         <small
           class="fs-7 d-flex justify-content-center align-items-center rounded text-white text-uppercase carrousel__code--width mb-1 fw-medium"
           [ngClass]="{
-            'bg-blue-3':
-              search.code === 'ITSA3' ||
-              search.code === 'ITSA4' ||
-              search.code === 'TOTS3' ||
-              search.code === 'MGLU3',
-            'bg-secondary': search.code === 'BRPR3',
-            'bg-indigo':
-              search.code === 'NUBR33' ||
-              search.code === 'OIBR3' ||
-              search.code === 'BBAS3',
-            'bg-blue-2': search.code === 'ABEV3',
-            'bg-green-1': search.code === 'HGLG11',
-            'bg-blue-1': search.code === 'BBAS3',
-            'bg-green-2': search.code === 'IRBR3',
-            'bg-red-1': search.code === 'BBDC3',
-            'bg-primary': search.code === 'ITUB3',
-            'bg-dark': search.code === 'ÍNDICE' || search.code === 'RAPT4',
-            'bg-danger': search.code === 'SANB11',
-            'bg-red-2': search.code === 'GOOGL'
+            'bg-blue-1': search.code === 'GRND3' || search.code === 'UGPA3',
+            'bg-dark':
+              search.code === 'USIM5' ||
+              search.code === 'FLRY3' ||
+              search.code === 'ODPV3' ||
+              search.code === 'ÍNDICE',
+            'bg-green-3': search.code === 'CMIG4',
+            'bg-yellow-2': search.code === 'BRFS3',
+            'bg-green-1': search.code === 'ELET3',
+            'bg-blue-2':
+              search.code === 'GGBR4' ||
+              search.code === 'GOAU4' ||
+              search.code === 'ITUB4' ||
+              search.code === 'WEGE3',
+            'bg-danger': search.code === 'CCRO3',
+            'bg-green-2': search.code === 'PETR4',
+            'bg-secondary': search.code === 'EMBR3',
+            'bg-red-1': search.code === 'BBDC4',
+            'bg-yellow-1': search.code === 'VALE3'
           }"
           >{{ search.code }}</small
         >
