@@ -19,6 +19,7 @@ import { InterestComponent } from './carrousel/interest/interest.component';
 import { SwiperModule } from 'swiper/angular';
 import { SearchComponent } from './carrousel/search/search.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { TrendMarketComponent } from './components/trend-market/trend-market.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { FooterComponent } from './layout/footer/footer.component';
     InterestComponent,
     SearchComponent,
     FooterComponent,
+    TrendMarketComponent,
   ],
   imports: [
     FormsModule,

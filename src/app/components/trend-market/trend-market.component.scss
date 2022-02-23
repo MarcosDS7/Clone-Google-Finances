@@ -1,0 +1,16 @@
+@import "../../../styles/variables";
+
+.trend__actionCode_container {
+  width: 3.4375rem;
+  height: 1.25rem;
+}
+
+.trend__actionCodePercentage--container {
+  width: 4.375rem;
+  height: 1.875rem;
+}
+
+.trend__list--hover:hover {
+  background-color: rgba(3, 3, 5, 0.1);
+  cursor: pointer;
+}
