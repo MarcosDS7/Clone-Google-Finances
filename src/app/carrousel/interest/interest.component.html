@@ -29,7 +29,7 @@
   }"
   class="mySwiper"
 >
-  <ng-template swiperSlide *ngFor="let search of interestList">
+  <ng-template swiperSlide *ngFor="let interest of interestList">
     <a
       [routerLink]="['/']"
       class="border border-dark bg-body rounded-3 p-2_5 d-flex flex-column justify-content-between text-decoration-none w-100 carrousel__card--height carrousel__card--hover cursor-move"
@@ -38,38 +38,38 @@
         <small
           class="fs-7 d-flex justify-content-center align-items-center rounded text-white text-uppercase carrousel__code--width mb-1 fw-medium"
           [ngClass]="{
-            'bg-blue-1': search.code === 'GRND3' || search.code === 'UGPA3',
+            'bg-blue-1': interest.code === 'GRND3' || interest.code === 'UGPA3',
             'bg-dark':
-              search.code === 'USIM5' ||
-              search.code === 'FLRY3' ||
-              search.code === 'ODPV3' ||
-              search.code === 'ÍNDICE',
-            'bg-green-3': search.code === 'CMIG4',
-            'bg-yellow-2': search.code === 'BRFS3',
-            'bg-green-1': search.code === 'ELET3',
+              interest.code === 'USIM5' ||
+              interest.code === 'FLRY3' ||
+              interest.code === 'ODPV3' ||
+              interest.code === 'ÍNDICE',
+            'bg-green-3': interest.code === 'CMIG4',
+            'bg-yellow-2': interest.code === 'BRFS3',
+            'bg-green-1': interest.code === 'ELET3',
             'bg-blue-2':
-              search.code === 'GGBR4' ||
-              search.code === 'GOAU4' ||
-              search.code === 'ITUB4' ||
-              search.code === 'WEGE3',
-            'bg-danger': search.code === 'CCRO3',
-            'bg-green-2': search.code === 'PETR4',
-            'bg-secondary': search.code === 'EMBR3',
-            'bg-red-1': search.code === 'BBDC4',
-            'bg-yellow-1': search.code === 'VALE3'
+              interest.code === 'GGBR4' ||
+              interest.code === 'GOAU4' ||
+              interest.code === 'ITUB4' ||
+              interest.code === 'WEGE3',
+            'bg-danger': interest.code === 'CCRO3',
+            'bg-green-2': interest.code === 'PETR4',
+            'bg-secondary': interest.code === 'EMBR3',
+            'bg-red-1': interest.code === 'BBDC4',
+            'bg-yellow-1': interest.code === 'VALE3'
           }"
-          >{{ search.code }}</small
+          >{{ interest.code }}</small
         >
         <small class="text-light text-opacity-75 fw-medium">{{
-          search.name
+          interest.name
         }}</small>
       </div>
       <div class="d-flex justify-content-between align-items-end">
         <div>
-          <p class="mb-1 text-white">{{ search.value }}</p>
+          <p class="mb-1 text-white">{{ interest.value }}</p>
           <small
             class="d-flex justify-content-center align-items-center rounded carrousel__percentage--width background-green-opacity text-success"
-            >{{ search.percentage }}</small
+            >{{ interest.percentage }}</small
           >
         </div>
         <small class="p-1 carrousel__follow--hover position-relative">
