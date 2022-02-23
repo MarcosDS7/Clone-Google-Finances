@@ -38,9 +38,9 @@ export class InterestComponent implements OnInit {
         percentage: '0,00%',
       },
       {
-        code: 'ELET3',
-        name: 'Eletrobras',
-        value: 'R$ 33,86',
+        code: 'VALE3',
+        name: 'Vale S.A.',
+        value: 'R$ 85,90',
         percentage: '0,00%',
       },
       {
@@ -116,9 +116,9 @@ export class InterestComponent implements OnInit {
         percentage: '0,00%',
       },
       {
-        code: 'VALE3',
-        name: 'Vale S.A.',
-        value: 'R$ 85,90',
+        code: 'ELET3',
+        name: 'Eletrobras',
+        value: 'R$ 33,86',
         percentage: '0,00%',
       }
     );

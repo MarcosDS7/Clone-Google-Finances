@@ -18,6 +18,7 @@ import { FollowedComponent } from './components/followed/followed.component';
 import { InterestComponent } from './carrousel/interest/interest.component';
 import { SwiperModule } from 'swiper/angular';
 import { SearchComponent } from './carrousel/search/search.component';
+import { FooterComponent } from './layout/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { SearchComponent } from './carrousel/search/search.component';
     FollowedComponent,
     InterestComponent,
     SearchComponent,
+    FooterComponent,
   ],
   imports: [
     FormsModule,

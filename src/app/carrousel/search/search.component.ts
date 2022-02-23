@@ -20,9 +20,9 @@ export class SearchComponent implements OnInit {
         percentage: '0,00%',
       },
       {
-        code: 'BRPR3',
-        name: 'BR Properties S.A.',
-        value: 'R$ 7,33',
+        code: 'BBDC3',
+        name: 'Bradesco',
+        value: 'R$ 17,61',
         percentage: '0,00%',
       },
       {
@@ -62,12 +62,6 @@ export class SearchComponent implements OnInit {
         percentage: '0,00%',
       },
       {
-        code: 'BBDC3',
-        name: 'Bradesco',
-        value: 'R$ 17,61',
-        percentage: '0,00%',
-      },
-      {
         code: 'ITUB3',
         name: 'Itaú Unibanco',
         value: 'R$ 22,22',
@@ -77,6 +71,12 @@ export class SearchComponent implements OnInit {
         code: 'ÍNDICE',
         name: 'Ibovespa',
         value: '112.891,80',
+        percentage: '0,00%',
+      },
+      {
+        code: 'BRPR3',
+        name: 'BR Properties S.A.',
+        value: 'R$ 7,33',
         percentage: '0,00%',
       },
       {
