@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TrendMarketComponent implements OnInit {
   trendList: any[] = [];
+  profitableList: any[] = [];
+  lessList: any[] = [];
 
   ngOnInit(): void {
     this.trendList.push(
@@ -21,7 +23,7 @@ export class TrendMarketComponent implements OnInit {
         code: 'PETR4',
         name: 'Petrobras',
         variation: 'R$ 34,22',
-        percentage: '1,42%%',
+        percentage: '1,42%',
         icon: 'arrow_upward',
       },
       {
@@ -51,6 +53,96 @@ export class TrendMarketComponent implements OnInit {
         variation: 'R$ 2,60',
         percentage: '0,38%',
         icon: 'arrow_downward',
+      }
+    );
+
+    this.profitableList.push(
+      {
+        code: 'SULA11',
+        name: 'Sul América SA',
+        variation: 'R$ 30,94',
+        percentage: '25,16%',
+        icon: 'arrow_upward',
+      },
+      {
+        code: 'RDOR3',
+        name: 'Rede d or Sao Luiz SA',
+        variation: 'R$ 55,50',
+        percentage: '8,82%',
+        icon: 'arrow_upward',
+      },
+      {
+        code: 'INEP4',
+        name: 'Grupo Inepar',
+        variation: 'R$ 1,54',
+        percentage: '6,21%',
+        icon: 'arrow_upward',
+      },
+      {
+        code: 'LAND3',
+        name: 'Terra Santa Properties Agricolas SA',
+        variation: 'R$ 21,69',
+        percentage: '4,83%',
+        icon: 'arrow_upward',
+      },
+      {
+        code: 'BRKM3',
+        name: 'Braskem',
+        variation: 'R$ 44,53',
+        percentage: '4,75%',
+        icon: 'arrow_upward',
+      },
+      {
+        code: 'CMIG3',
+        name: 'Companhia Energética de Minas Gerais',
+        variation: 'R$ 17,49',
+        percentage: '4,67%',
+        icon: 'arrow_upward',
+      }
+    );
+
+    this.lessList.push(
+      {
+        code: 'ETER3',
+        name: 'Eternit',
+        variation: 'R$ 14,75',
+        percentage: '0,00%',
+        icon: 'arrow_upward',
+      },
+      {
+        code: 'NUBR33',
+        name: 'Nubank Holding Bdr',
+        variation: 'R$ 6,32',
+        percentage: '0,00%',
+        icon: 'arrow_upward',
+      },
+      {
+        code: 'Z1OM34',
+        name: 'ZOOM',
+        variation: 'R$ 24,01',
+        percentage: '0,00%',
+        icon: 'arrow_upward',
+      },
+      {
+        code: 'C1GP34',
+        name: 'Costar Group Inc Bdr',
+        variation: 'R$ 2,73',
+        percentage: '0,00%',
+        icon: 'arrow_upward',
+      },
+      {
+        code: 'RRRP3',
+        name: 'R$ 31,59',
+        variation: 'R$ 14,75',
+        percentage: '0,00%',
+        icon: 'arrow_upward',
+      },
+      {
+        code: 'BIDI11',
+        name: 'Inter',
+        variation: 'R$ 20,96',
+        percentage: '0,00%',
+        icon: 'arrow_upward',
       }
     );
   }

@@ -1,57 +1,233 @@
 <section class="w-100 p-4">
   <div class="container-lg p-0">
-    <p class="mb-2 font-monospace text-light">Tendências de mercado</p>
-    <ul class="list-unstyled m-0">
-      <li
-        *ngFor="let item of trendList; let i = index"
-        class="border-top border-dark py-2 d-flex align-items-sm-center justify-content-between trend__list--hover gap-3"
+    <p class="mb-3 font-monospace text-light">Tendências de mercado</p>
+    <nav>
+      <div
+        class="nav nav-tabs border-dark gap-2 pb-2"
+        id="nav-tab"
+        role="tablist"
       >
-        <div class="d-flex flex-column flex-sm-row align-items-sm-center gap-2">
-          <p
-            [ngClass]="{
-              'bg-secondary': item.code === 'CIEL3',
-              'bg-blue-3': item.code === 'MGLU3',
-              'bg-dark': item.code === 'B3SA3',
-              'bg-blue-2': item.code === 'VIIA3',
-              'bg-green-1': item.code === 'PETR4',
-              'bg-indigo': item.code === 'OIBR3'
-            }"
-            class="fs-7 d-flex justify-content-center align-items-center rounded text-white text-uppercase m-0 trend__actionCode_container"
-          >
-            {{ item.code }}
-          </p>
-          <small class="text-opacity-75 text-light">{{ item.name }}</small>
-        </div>
-        <div
-          class="d-flex justify-content-end align-items-center gap-3 gap-md-5"
+        <a
+          class="font-monospace fs-6 fw-medium text-light text-opacity-50 py-1 px-3 text-decoration-none rounded-pill active"
+          id="nav-more-tab"
+          data-bs-target="#nav-more"
+          data-bs-toggle="tab"
+          type="button"
+          role="tab"
+          aria-controls="nav-more"
+          aria-selected="true"
         >
-          <small class="text-light text-opacity-75 d-none d-sm-inline">{{
-            item.variation
-          }}</small>
-          <div class="d-flex align-items-center gap-2">
-            <small
-              class="text-success d-flex justify-content-center align-items-center gap-1 rounded trend__actionCodePercentage--container"
-              [ngClass]="{
-                'text-success background-green-opacity':
-                  item.icon === 'arrow_upward',
-                'text-danger background-danger-opacity':
-                  item.icon === 'arrow_downward'
-              }"
+          Mais ativos
+        </a>
+        <a
+          class="font-monospace fs-6 fw-medium text-light text-opacity-50 py-1 px-3 text-decoration-none rounded-pill"
+          id="nav-profitable-tab"
+          data-bs-target="#nav-profitable"
+          data-bs-toggle="tab"
+          type="button"
+          role="tab"
+          aria-controls="nav-profitable"
+          aria-selected="false"
+        >
+          Rentáveis
+        </a>
+        <a
+          class="font-monospace fs-6 fw-medium text-light text-opacity-50 py-1 px-3 text-decoration-none rounded-pill"
+          id="nav-less-tab"
+          data-bs-target="#nav-less"
+          data-bs-toggle="tab"
+          type="button"
+          role="tab"
+          aria-controls="nav-less"
+          aria-selected="false"
+        >
+          Menos rentáveis
+        </a>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div
+        class="tab-pane fade show active"
+        id="nav-more"
+        role="tabpanel"
+        aria-labelledby="nav-more-tab"
+      >
+        <ul class="list-unstyled m-0">
+          <li
+            class="border-bottom border-dark py-2 d-flex align-items-sm-center justify-content-between trend__list--hover gap-3"
+            *ngFor="let item of trendList; let i = index"
+          >
+            <div
+              class="d-flex flex-column flex-sm-row align-items-sm-center gap-2"
             >
-              <i class="material-icons fs-6">{{ item.icon }}</i>
-              {{ item.percentage }}</small
-            >
-            <small class="p-1 follow--hover position-relative">
-              <i class="bi bi-check-circle-fill fs-5 d-flex"></i>
-              <div
-                class="rounded py-1 px-2 text-body text-center position-absolute bg-body border border-dark shadow"
+              <p
+                class="fs-7 d-flex justify-content-center align-items-center rounded text-white text-uppercase m-0 trend__actionCode_container"
+                [ngClass]="{
+                  'bg-secondary': item.code === 'CIEL3',
+                  'bg-blue-3': item.code === 'MGLU3',
+                  'bg-dark': item.code === 'B3SA3',
+                  'bg-blue-2': item.code === 'VIIA3',
+                  'bg-green-1': item.code === 'PETR4',
+                  'bg-indigo': item.code === 'OIBR3'
+                }"
               >
-                <small class="fs-7">Seguindo</small>
+                {{ item.code }}
+              </p>
+              <small class="text-opacity-75 text-light">{{ item.name }}</small>
+            </div>
+            <div
+              class="d-flex justify-content-end align-items-center gap-3 gap-md-5"
+            >
+              <small class="text-light text-opacity-75 d-none d-sm-inline">{{
+                item.variation
+              }}</small>
+              <div class="d-flex align-items-center gap-2">
+                <small
+                  class="text-success d-flex justify-content-center align-items-center gap-1 rounded trend__actionCodePercentage--container"
+                  [ngClass]="{
+                    'text-success background-green-opacity':
+                      item.icon === 'arrow_upward',
+                    'text-danger background-danger-opacity':
+                      item.icon === 'arrow_downward'
+                  }"
+                >
+                  <i class="material-icons fs-6">{{ item.icon }}</i>
+                  {{ item.percentage }}</small
+                >
+                <small class="p-1 follow--hover position-relative">
+                  <i class="bi bi-check-circle-fill fs-5 d-flex"></i>
+                  <div
+                    class="rounded py-1 px-2 text-body text-center position-absolute bg-body border border-dark shadow"
+                  >
+                    <small class="fs-7">Seguindo</small>
+                  </div>
+                </small>
               </div>
-            </small>
-          </div>
-        </div>
-      </li>
-    </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="nav-profitable"
+        role="tabpanel"
+        aria-labelledby="nav-profitable-tab"
+      >
+        <ul class="list-unstyled m-0">
+          <li
+            class="border-bottom border-dark py-2 d-flex align-items-sm-center justify-content-between trend__list--hover gap-3"
+            *ngFor="let item of profitableList; let i = index"
+          >
+            <div
+              class="d-flex flex-column flex-sm-row align-items-sm-center gap-2"
+            >
+              <p
+                class="fs-7 d-flex justify-content-center align-items-center rounded text-white text-uppercase m-0 trend__actionCode_container"
+                [ngClass]="{
+                  'bg-orange': item.code === 'SULA11',
+                  'bg-blue-3': item.code === 'RDOR3',
+                  'bg-dark': item.code === 'LAND3',
+                  'bg-blue-1': item.code === 'INEP4',
+                  'bg-secondary': item.code === 'BRKM3',
+                  'bg-green-3': item.code === 'CMIG3'
+                }"
+              >
+                {{ item.code }}
+              </p>
+              <small class="text-opacity-75 text-light">{{ item.name }}</small>
+            </div>
+            <div
+              class="d-flex justify-content-end align-items-center gap-3 gap-md-5"
+            >
+              <small class="text-light text-opacity-75 d-none d-sm-inline">{{
+                item.variation
+              }}</small>
+              <div class="d-flex align-items-center gap-2">
+                <small
+                  class="text-success d-flex justify-content-center align-items-center gap-1 rounded trend__actionCodePercentage--container"
+                  [ngClass]="{
+                    'text-success background-green-opacity':
+                      item.icon === 'arrow_upward',
+                    'text-danger background-danger-opacity':
+                      item.icon === 'arrow_downward'
+                  }"
+                >
+                  <i class="material-icons fs-6">{{ item.icon }}</i>
+                  {{ item.percentage }}</small
+                >
+                <small class="p-1 follow--hover position-relative">
+                  <i class="bi bi-check-circle-fill fs-5 d-flex"></i>
+                  <div
+                    class="rounded py-1 px-2 text-body text-center position-absolute bg-body border border-dark shadow"
+                  >
+                    <small class="fs-7">Seguindo</small>
+                  </div>
+                </small>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="nav-less"
+        role="tabpanel"
+        aria-labelledby="nav-less-tab"
+      >
+        <ul class="list-unstyled m-0">
+          <li
+            class="border-bottom border-dark py-2 d-flex align-items-sm-center justify-content-between trend__list--hover gap-3"
+            *ngFor="let item of lessList; let i = index"
+          >
+            <div
+              class="d-flex flex-column flex-sm-row align-items-sm-center gap-2"
+            >
+              <p
+                class="fs-7 d-flex justify-content-center align-items-center rounded text-white text-uppercase m-0 trend__actionCode_container"
+                [ngClass]="{
+                  'bg-red-1': item.code === 'ETER3',
+                  'bg-primary': item.code === 'Z1OM34',
+                  'bg-dark': item.code === 'C1GP34',
+                  'bg-orange': item.code === 'BIDI11',
+                  'bg-green-1': item.code === 'RRRP3',
+                  'bg-indigo': item.code === 'NUBR33'
+                }"
+              >
+                {{ item.code }}
+              </p>
+              <small class="text-opacity-75 text-light">{{ item.name }}</small>
+            </div>
+            <div
+              class="d-flex justify-content-end align-items-center gap-3 gap-md-5"
+            >
+              <small class="text-light text-opacity-75 d-none d-sm-inline">{{
+                item.variation
+              }}</small>
+              <div class="d-flex align-items-center gap-2">
+                <small
+                  class="text-success d-flex justify-content-center align-items-center rounded trend__actionCodePercentage--container"
+                  [ngClass]="{
+                    'text-success background-green-opacity':
+                      item.icon === 'arrow_upward',
+                    'text-danger background-danger-opacity':
+                      item.icon === 'arrow_downward'
+                  }"
+                >
+                  {{ item.percentage }}</small
+                >
+                <small class="p-1 follow--hover position-relative">
+                  <i class="bi bi-check-circle-fill fs-5 d-flex"></i>
+                  <div
+                    class="rounded py-1 px-2 text-body text-center position-absolute bg-body border border-dark shadow"
+                  >
+                    <small class="fs-7">Seguindo</small>
+                  </div>
+                </small>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>

@@ -14,3 +14,8 @@
   background-color: rgba(3, 3, 5, 0.1);
   cursor: pointer;
 }
+
+.nav a.active {
+  color: var(--color-blue-3) !important;
+  background-color: rgba($color: $dark, $alpha: 0.4);
+}

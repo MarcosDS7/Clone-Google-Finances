@@ -99,6 +99,10 @@ body {
   background-color: var(--color-yellow-2);
 }
 
+.bg-orange {
+  background-color: $orange;
+}
+
 .toast-success-dark {
   background-color: var(--color-dark-2) !important;
   box-shadow: none !important;
