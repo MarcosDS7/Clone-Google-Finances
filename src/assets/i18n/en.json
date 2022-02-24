@@ -1,0 +1,15 @@
+{
+  "APP": {
+    "TITLE": "Google Finance: Stock market prices, real-time quotes and financial market news",
+    "DESCRIPTION": "Google Finance provides real-time quotes, data on international transactions, recent financial market news and statistics. With these, you have more information available to make decisions about investments and operations.",
+    "AUTHOR": "Google",
+    "KEYWORDS": "quotes, data, transactions, news, financial, market, investments"
+  },
+
+  "NAVBAR": {
+    "LANGUAGE": {
+      "PORTGUESE": "Portuguese",
+      "ENGLISH": "English"
+    }
+  }
+}

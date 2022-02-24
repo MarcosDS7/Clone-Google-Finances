@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { LanguageService } from 'src/app/services/language.service';
 
 @Component({
   selector: 'app-navbar',
@@ -10,13 +12,17 @@ export class NavbarComponent implements OnInit {
   listActives: any[] = [];
   sidebar: boolean;
 
-  constructor() {
+  constructor(private translateService: LanguageService, public route: Router) {
     this.sidebar = false;
     window.onscroll = () => {
       if (this.sidebar === true) {
         this.sidebar = false;
       }
     };
+  }
+
+  switchLanguage(lang: string) {
+    this.translateService.switchLanguage(lang);
   }
 
   openSidebar() {

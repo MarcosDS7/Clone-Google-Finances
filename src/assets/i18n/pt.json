@@ -1,0 +1,15 @@
+{
+  "APP": {
+    "TITLE": "Google Finance: preços da bolsa de valores, cotações em tempo real e notícias sobre o mercado financeiro",
+    "DESCRIPTION": "O Google Finance fornece cotações em tempo real, dados sobre transações internacionais, notícias recentes do mercado financeiro e estatísticas. Com esses isso, você tem mais informações disponíveis para tomar decisões sobre investimentos e operações.",
+    "AUTHOR": "Google",
+    "KEYWORDS": "cotações, dados, transações, notícias, financeiro, mercado, investimentos"
+  },
+
+  "NAVBAR": {
+    "LANGUAGE": {
+      "PORTGUESE": "Português",
+      "ENGLISH": "Inglês"
+    }
+  }
+}

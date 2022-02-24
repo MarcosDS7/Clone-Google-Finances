@@ -15,10 +15,60 @@
         src="./assets/img/google.svg"
         alt="Logo do google"
       />
-      <p class="mb-0 ms-2 font-monospace fw-medium fs-5 text-light">Finanças</p>
+      <p
+        class="mb-0 ms-2 font-monospace fw-medium fs-5 text-light d-none d-sm-block"
+      >
+        Finanças
+      </p>
     </a>
   </div>
   <div class="d-flex align-items-center mt-1">
+    <div>
+      <button
+        class="btn d-flex p-2 shadow-none rounded-circle hover-bg-gray"
+        id="dropdownLanguage"
+        data-bs-toggle="dropdown"
+        type="button"
+        aria-expanded="false"
+      >
+        <i class="material-icons-outlined text-white" title="Ícone de linguagem"
+          >language</i
+        >
+      </button>
+      <ul
+        class="dropdown-menu navbar__dropdownApps--background p-0 border border-dark"
+        aria-labelledby="dropdownLanguage"
+      >
+        <li>
+          <button
+            type="button"
+            class="btn d-flex align-items-center gap-2 text-white text-opacity-75 w-100 shadow-none p-2 navbar__flagButton--hover"
+            (click)="switchLanguage('pt')"
+          >
+            <img
+              class="d-block navbar__flag--width rounded"
+              src="./assets/img/brasil.svg"
+              alt="Imagem do Brasil"
+            />
+            <small>{{ "NAVBAR.LANGUAGE.PORTGUESE" | translate }}</small>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="btn d-flex align-items-center gap-2 text-white text-opacity-75 w-100 shadow-none p-2 navbar__flagButton--hover"
+            (click)="switchLanguage('en')"
+          >
+            <img
+              class="d-block navbar__flag--width rounded"
+              src="./assets/img/usa.svg"
+              alt="Imagem dos Estados Unidos"
+            />
+            <small>{{ "NAVBAR.LANGUAGE.ENGLISH" | translate }}</small>
+          </button>
+        </li>
+      </ul>
+    </div>
     <div>
       <button
         class="btn d-flex p-2 shadow-none rounded-circle hover-bg-gray"

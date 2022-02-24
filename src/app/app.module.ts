@@ -1,7 +1,8 @@
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { AppComponent, HttpLoaderFactory } from './app.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { ToastrModule } from 'ngx-toastr';
@@ -20,6 +21,7 @@ import { SwiperModule } from 'swiper/angular';
 import { SearchComponent } from './carrousel/search/search.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { TrendMarketComponent } from './components/trend-market/trend-market.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -44,6 +46,7 @@ import { TrendMarketComponent } from './components/trend-market/trend-market.com
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     SwiperModule,
     ToastrModule.forRoot({
       timeOut: 5000,
@@ -53,6 +56,13 @@ import { TrendMarketComponent } from './components/trend-market/trend-market.com
         success: 'toast-success-dark',
       },
       enableHtml: true,
+    }),
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient],
+      },
     }),
   ],
   providers: [],

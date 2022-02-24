@@ -5,6 +5,14 @@
   width: 4.625rem;
 }
 
+.navbar__flag--width {
+  width: 1.5rem;
+}
+
+.navbar__flagButton--hover:hover {
+  color: $blue !important;
+}
+
 .navbar__imageUser--width {
   width: 2rem;
   height: 2rem;
