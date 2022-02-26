@@ -106,6 +106,161 @@
     "MONTHOF": "de fev. de"
   },
 
+  "INTEREST": {
+    "TITLE": "Saiba mais",
+    "SUBTITLE": "Talvez você se interesse por",
+    "ALT_ICON_INFO": "Ícone de informação",
+    "TXT_FOLLOWED": "Seguindo",
+    "ALT_ICON_ADD": "Ícone de adicionar"
+  },
+
+  "SEARCH": {
+    "TITLE": "Pesquisas recentes",
+    "TXT_FOLLOWED": "Seguindo",
+    "ALT_ICON_ADD": "Ícone de adicionar"
+  },
+
+  "FOLLOWED": {
+    "TITLE": "Mais seguidas no Google",
+    "TXT_FOLLOWED": "Seguindo",
+    "ALT_ICON_CHECK": "Ícone de verificado"
+  },
+
+  "NEW": {
+    "TITLE": "Notícias sobre o mercado financeiro de hoje",
+    "TAB1_TITLE": "Principais notícias",
+    "TAB2_TITLE": "Mercado local",
+    "TAB3_TITLE": "Mercados mundiais",
+    "ALT_NEWS": "Imagem da notícia",
+
+    "NEW_LIST": {
+      "NEW1": {
+        "NAME": "Imposto de Renda 2022: Receita Federal divulga regras para declaração esta semana",
+        "DATE": "há 6 horas"
+      } ,
+      "NEW2": {
+        "NAME": "Fundos públicos e INSS também são fontes de dinheiro esquecido; veja como consultar",
+        "DATE": "há 4 horas"
+      },
+      "NEW3": {
+        "NAME": "Rádio Caca (RACA): A criptomoeda “da mãe de Elon Musk” que despencou 65% em 6 meses",
+        "DATE": "há 1 dia"
+      },
+      "NEW4": {
+        "NAME": "Como garantir a aposentadoria do MEI com valor superior a um salário",
+        "DATE": "há 7 horas"
+      },
+      "NEW5": {
+        "NAME": "Amortizar o financiamento ou investir em renda fixa? Com alta da Selic, veja o que vale a pena",
+        "DATE": "há 1 dia"
+      },
+      "NEW6": {
+        "NAME": "Após perder indústrias, Osasco vira polo tecnológico",
+        "DATE": "há 9 horas"
+      } ,
+      "NEW7": {
+        "NAME": "Americanas e Submarino: usuários reportam instabilidade e redirecionamento para site",
+        "DATE": "há 1 dia"
+      },
+      "NEW8": {
+        "NAME": "Saiba onde assistir Venezia x Genoa pelo campeonato italiano neste domingo 20/02",
+        "DATE": "há 3 horas"
+      },
+      "NEW9": {
+        "NAME": "Google e Vivo se unem para acelerar digitalização de escolas públicas e privadas do Brasil",
+        "DATE": "há 1 dia"
+      }
+    },
+
+    "LOCAL_LIST": {
+      "NEW1": {
+        "NAME": "5 ações para buscar lucro no curto prazo e superar o Ibovespa, segundo a MyCap",
+        "DATE": "há 1 horas"
+      } ,
+      "NEW2": {
+        "NAME": "Carnaval 2022: veja como será funcionamento de bancos, B3 e serviços públicos em SP",
+        "DATE": "há 1 dia"
+      },
+      "NEW3": {
+        "NAME": "Ibovespa, Dólar, Petrobras, Lojas Renner, JHSF, Minerva: Giro Semanal dos Gráficos",
+        "DATE": "há 7 horas"
+      },
+      "NEW4": {
+        "NAME": "Fechamento da Semana - IBOV interrompe série de altas",
+        "DATE": "há 1 dia"
+      },
+      "NEW5": {
+        "NAME": "B3 autoriza Bmg a manter circulação de ações abaixo do mínimo",
+        "DATE": "há 1 dia"
+      },
+      "NEW6": {
+        "NAME": "Ibovespa fecha em queda pressionado por crise geopolítica",
+        "DATE": "há 1 dia"
+      } ,
+      "NEW7": {
+        "NAME": "Ibovespa hoje: Rumo (RAIL3), Locaweb (LWSA3) e Natura (NTCO3) são os destaques negativos",
+        "DATE": "há 1 dia"
+      },
+      "NEW8": {
+        "NAME": "Termômetro Broadcast Bolsa: Quadro de expectativas para Ibovespa está mais equilibrado",
+        "DATE": "há 1 dia"
+      },
+      "NEW9": {
+        "NAME": "Bovespa fecha em queda após atingir maior patamar em 5 meses",
+        "DATE": "há 3 dia"
+      }
+    },
+
+    "WORD_WIDE_LIST": {
+      "NEW1": {
+        "NAME": "Bolsa de Nova York fecha em queda com tensão geopolítica; Dow Jones, S&P 500 e Nasdaq amargam perdas na semana",
+        "DATE": "há 1 dia"
+      } ,
+      "NEW2": {
+        "NAME": "Índices futuros dos EUA sobem após Dow Jones registrar pior sessão do ano: os assuntos que vão movimentar o mercado hoje",
+        "DATE": "há 2 dia"
+      },
+      "NEW3": {
+        "NAME": "Dow Jones teve pior declínio de 2022 à medida que tensões Rússia-Ucrânia preocupa investidores",
+        "DATE": "há 2 dia"
+      },
+      "NEW4": {
+        "NAME": "Todos os sinais indicam que o mercado de ações estará sob pressão nos próximos 6 meses",
+        "DATE": "há 10 horas"
+      },
+      "NEW5": {
+        "NAME": "70% das ações da Sensex não vão a lugar nenhum, aposte em smallcaps para compor seu dinheiro: Shankar Sharma",
+        "DATE": "há 1 dia"
+      },
+      "NEW6": {
+        "NAME": "FTSE encerra semana de perdas, mas Evraz brilha enquanto investidores observam os desenvolvimentos Rússia-Ucrânia",
+        "DATE": "há 2 dia"
+      } ,
+      "NEW7": {
+        "NAME": "3 ações FTSE 100 que eu evitaria como a praga!",
+        "DATE": "há 1 dia"
+      },
+      "NEW8": {
+        "NAME": "FTSE 100 para Edge Superior; Recuperação de vendas no varejo",
+        "DATE": "há 2 dia"
+      },
+      "NEW9": {
+        "NAME": "Média das ações do Nikkei de Tóquio abre em queda de 1,24%",
+        "DATE": "há 2 dia"
+      }
+    }
+  },
+
+  "TREND_MARKET": {
+    "TITLE": "Tendências de mercado",
+    "TAB1_TITLE": "Mais ativos",
+    "TAB2_TITLE": "Rentáveis",
+    "TAB3_TITLE": "Menos rentáveis",
+    "TXT_FOLLOWED": "Seguindo",
+    "ALT_ICON_ARROW": "Ícone de seta",
+    "ALT_ICON_CHECK": "Ícone de verificado"
+  },
+
   "FOOTER": {
     "ALT_LOGO": "Logo branca google",
     "ITEM1": "Ajuda",

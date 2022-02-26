@@ -1,8 +1,14 @@
 <header class="mb-3">
-  <p class="mb-2 fs-5 text-light font-mosnospace">Saiba mais</p>
+  <p class="mb-2 fs-5 text-light font-mosnospace">
+    {{ "INTEREST.TITLE" | translate }}
+  </p>
   <div class="d-flex align-items-center gap-1 text-light text-opacity-75">
-    <small>Talvez você se interesse por</small>
-    <i class="material-icons-outlined fs-6">info</i>
+    <small>{{ "INTEREST.SUBTITLE" | translate }}</small>
+    <i
+      class="material-icons-outlined fs-6"
+      title="{{ 'INTEREST.ALT_ICON_INFO' | translate }}"
+      >info</i
+    >
   </div>
 </header>
 <swiper
@@ -73,11 +79,17 @@
           >
         </div>
         <small class="p-1 carrousel__follow--hover position-relative">
-          <i class="material-icons fs-4 d-flex">add_circle_outline</i>
+          <i
+            class="material-icons fs-4 d-flex"
+            title="{{ 'INTEREST.ALT_ICON_ADD' | translate }}"
+            >add_circle_outline</i
+          >
           <div
             class="rounded py-1 px-2 text-body text-center position-absolute bg-body border border-dark shadow"
           >
-            <small class="fs-7">Seguindo</small>
+            <small class="fs-7">{{
+              "INTEREST.TXT_FOLLOWED" | translate
+            }}</small>
           </div>
         </small>
       </div>

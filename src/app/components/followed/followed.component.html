@@ -1,6 +1,8 @@
 <article class="px-3 pt-3 border border-dark rounded-3">
   <header class="pb-2">
-    <p class="m-0 font-monospace text-light fs-6">Mais seguidas no Google</p>
+    <p class="m-0 font-monospace text-light fs-6">
+      {{ "FOLLOWED.TITLE" | translate }}
+    </p>
   </header>
   <ul class="list-unstyled m-0">
     <li
@@ -28,11 +30,16 @@
           >{{ followed.percentage }}</small
         >
         <small class="p-1 follow--hover position-relative">
-          <i class="bi bi-check-circle-fill fs-5 d-flex"></i>
+          <i
+            class="bi bi-check-circle-fill fs-5 d-flex"
+            title="{{ 'FOLLOWED.ALT_ICON_CHECK' | translate }}"
+          ></i>
           <div
             class="rounded py-1 px-2 text-body text-center position-absolute bg-body border border-dark shadow"
           >
-            <small class="fs-7">Seguindo</small>
+            <small class="fs-7">{{
+              "FOLLOWED.TXT_FOLLOWED" | translate
+            }}</small>
           </div>
         </small>
       </div>

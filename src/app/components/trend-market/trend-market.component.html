@@ -1,6 +1,8 @@
 <section class="w-100 p-4">
   <div class="container-lg p-0">
-    <p class="mb-3 font-monospace text-light">Tendências de mercado</p>
+    <p class="mb-3 font-monospace text-light">
+      {{ "TREND_MARKET.TITLE" | translate }}
+    </p>
     <nav>
       <div
         class="nav nav-tabs border-dark gap-2 pb-2"
@@ -17,7 +19,7 @@
           aria-controls="nav-more"
           aria-selected="true"
         >
-          Mais ativos
+          {{ "TREND_MARKET.TAB1_TITLE" | translate }}
         </a>
         <a
           class="font-monospace fs-6 fw-medium text-light text-opacity-50 py-1 px-3 text-decoration-none rounded-pill"
@@ -29,7 +31,7 @@
           aria-controls="nav-profitable"
           aria-selected="false"
         >
-          Rentáveis
+          {{ "TREND_MARKET.TAB2_TITLE" | translate }}
         </a>
         <a
           class="font-monospace fs-6 fw-medium text-light text-opacity-50 py-1 px-3 text-decoration-none rounded-pill"
@@ -41,7 +43,7 @@
           aria-controls="nav-less"
           aria-selected="false"
         >
-          Menos rentáveis
+          {{ "TREND_MARKET.TAB3_TITLE" | translate }}
         </a>
       </div>
     </nav>
@@ -91,15 +93,24 @@
                       item.icon === 'arrow_downward'
                   }"
                 >
-                  <i class="material-icons fs-6">{{ item.icon }}</i>
+                  <i
+                    class="material-icons fs-6"
+                    title="{{ 'TREND_MARKET.ALT_ICON_ARROW' | translate }}"
+                    >{{ item.icon }}</i
+                  >
                   {{ item.percentage }}</small
                 >
                 <small class="p-1 follow--hover position-relative">
-                  <i class="bi bi-check-circle-fill fs-5 d-flex"></i>
+                  <i
+                    class="bi bi-check-circle-fill fs-5 d-flex"
+                    title="{{ 'TREND_MARKET.ALTALT_ICON_CHECK' | translate }}"
+                  ></i>
                   <div
                     class="rounded py-1 px-2 text-body text-center position-absolute bg-body border border-dark shadow"
                   >
-                    <small class="fs-7">Seguindo</small>
+                    <small class="fs-7">{{
+                      "TREND_MARKET.TXT_FOLLOWED" | translate
+                    }}</small>
                   </div>
                 </small>
               </div>
@@ -152,15 +163,24 @@
                       item.icon === 'arrow_downward'
                   }"
                 >
-                  <i class="material-icons fs-6">{{ item.icon }}</i>
+                  <i
+                    class="material-icons fs-6"
+                    title="{{ 'TREND_MARKET.ALT_ICON_ARROW' | translate }}"
+                    >{{ item.icon }}</i
+                  >
                   {{ item.percentage }}</small
                 >
                 <small class="p-1 follow--hover position-relative">
-                  <i class="bi bi-check-circle-fill fs-5 d-flex"></i>
+                  <i
+                    class="bi bi-check-circle-fill fs-5 d-flex"
+                    title="{{ 'TREND_MARKET.ALTALT_ICON_CHECK' | translate }}"
+                  ></i>
                   <div
                     class="rounded py-1 px-2 text-body text-center position-absolute bg-body border border-dark shadow"
                   >
-                    <small class="fs-7">Seguindo</small>
+                    <small class="fs-7"
+                      >{{ "TREND_MARKET.TXT_FOLLOWED" | translate }}
+                    </small>
                   </div>
                 </small>
               </div>
@@ -216,11 +236,16 @@
                   {{ item.percentage }}</small
                 >
                 <small class="p-1 follow--hover position-relative">
-                  <i class="bi bi-check-circle-fill fs-5 d-flex"></i>
+                  <i
+                    class="bi bi-check-circle-fill fs-5 d-flex"
+                    title="{{ 'TREND_MARKET.ALTALT_ICON_CHECK' | translate }}"
+                  ></i>
                   <div
                     class="rounded py-1 px-2 text-body text-center position-absolute bg-body border border-dark shadow"
                   >
-                    <small class="fs-7">Seguindo</small>
+                    <small class="fs-7"
+                      >{{ "TREND_MARKET.TXT_FOLLOWED" | translate }}
+                    </small>
                   </div>
                 </small>
               </div>

@@ -106,6 +106,162 @@
     "MONTHOF": "feb."
   },
 
+  "INTEREST": {
+    "TITLE": "know more",
+    "SUBTITLE": "Maybe you are interested in",
+    "ALT_ICON_INFO": "Information icon",
+    "TXT_FOLLOWED": "Following",
+    "ALT_ICON_ADD": "Add icon"
+  },
+
+  "SEARCH": {
+    "TITLE": "Recent researches",
+    "TXT_FOLLOWED": "Following",
+    "ALT_ICON_ADD": "Add icon"
+  },
+
+  "FOLLOWED": {
+    "TITLE": "Most followed on Google",
+    "TXT_FOLLOWED": "Following",
+    "ALT_ICON_CHECK": "Check icon"
+  },
+
+  "NEW": {
+    "TITLE": "Today's financial market news",
+    "TAB1_TITLE": "Top news",
+    "TAB2_TITLE": "Local market",
+    "TAB3_TITLE": "World markets",
+    "ALT_NEWS": "News image",
+
+    "NEW_LIST": {
+      "NEW1": {
+        "NAME": "Income Tax 2022: Federal Revenue releases rules for declaration this week",
+        "DATE": "6 hours ago"
+      } ,
+      "NEW2": {
+        "NAME": "Public funds and INSS are also sources of forgotten money; see how to consult",
+        "DATE": "4 hours ago"
+      },
+      "NEW3": {
+        "NAME": "Rádio Caca (RACA): The cryptocurrency “from the mother of Elon Musk” that plummeted 65% in 6 months",
+        "DATE": "1 day ago"
+      },
+      "NEW4": {
+        "NAME": "How to guarantee MEI retirement with a value greater than one salary",
+        "DATE": "7 hours ago"
+      },
+      "NEW5": {
+        "NAME": "Amortizar o financiamento ou investir em renda fixa? Com alta da Selic, veja o que vale a pena",
+        "DATE": "1 day ago"
+      },
+      "NEW6": {
+        "NAME": "After losing industries, Osasco becomes a technology hub",
+        "DATE": "9 hours ago"
+      } ,
+      "NEW7": {
+        "NAME": "Americanas and Submarino: users report instability and redirection to website",
+        "DATE": "1 day ago"
+      },
+      "NEW8": {
+        "NAME": "Find out where to watch Venezia vs Genoa for the Italian championship this Sunday 20/02",
+        "DATE": "3 hours ago"
+      },
+      "NEW9": {
+        "NAME": "Google and Vivo team up to accelerate digitalization of public and private schools in Brazil",
+        "DATE": "1 day ago"
+      }
+    },
+
+    "LOCAL_LIST": {
+      "NEW1": {
+        "NAME": "5 actions to seek profit in the short term and beat the Ibovespa, according to MyCap",
+        "DATE": "1 hours ago"
+      } ,
+      "NEW2": {
+        "NAME": "Carnival 2022: see how banks, B3 and public services will work in SP",
+        "DATE": "1 day ago"
+      },
+      "NEW3": {
+        "NAME": "Ibovespa, Dollar, Petrobras, Lojas Renner, JHSF, Minerva: Giro Semanal dos Desenhos",
+        "DATE": "7 hours ago"
+      },
+      "NEW4": {
+        "NAME": "End of the Week - IBOV interrupts series of highs",
+        "DATE": "1 day ago"
+      },
+      "NEW5": {
+        "NAME": "B3 authorizes Bmg to keep the circulation of shares below the minimum",
+        "DATE": "1 day ago"
+      },
+      "NEW6": {
+        "NAME": "Ibovespa closes lower pressured by geopolitical crisis",
+        "DATE": "1 day ago"
+      } ,
+      "NEW7": {
+        "NAME": "Ibovespa today: Rumo (RAIL3), Locaweb (LWSA3) and Natura (NTCO3) are the negative highlights",
+        "DATE": "1 day ago"
+      },
+      "NEW8": {
+        "NAME": "Thermometer Broadcast Bolsa: Expectations framework for Ibovespa is more balanced",
+        "DATE": "1 day ago"
+      },
+      "NEW9": {
+        "NAME": "Bovespa closes down after reaching the highest level in 5 months",
+        "DATE": "3 days ago"
+      }
+    },
+
+    "WORD_WIDE_LIST": {
+      "NEW1": {
+        "NAME": "New York Stock Exchange closes down on geopolitical tension; Dow Jones, S&P 500 and Nasdaq suffer losses this week",
+        "DATE": "1 day ago"
+      } ,
+      "NEW2": {
+        "NAME": "US futures indexes rise after Dow Jones registers worst session of the year: the subjects that will move the market today",
+        "DATE": "2 days ago"
+      },
+      "NEW3": {
+        "NAME": "Dow Jones teve pior declínio de 2022 à medida que tensões Rússia-Ucrânia preocupa investidores",
+        "DATE": "2 days ago"
+      },
+      "NEW4": {
+        "NAME": "​All signs indicate stock market will be under pressure for next 6 months",
+        "DATE": "10 hours ago"
+      },
+      "NEW5": {
+        "NAME": "70% of Sensex stocks will go nowhere, bet on smallcaps to compound your money: Shankar Sharma",
+        "DATE": "1 day ago"
+      },
+      "NEW6": {
+        "NAME": "FTSE wraps up losing week, but Evraz shines as investors watch Russia-Ukraine developments",
+        "DATE": "2 days ago"
+      } ,
+      "NEW7": {
+        "NAME": "3 FTSE 100 stocks I’d avoid like the plague!",
+        "DATE": "1 day ago"
+      },
+      "NEW8": {
+        "NAME": "FTSE 100 to Edge Higher; Retail Sales Recover",
+        "DATE": "2 days ago"
+      },
+      "NEW9": {
+        "NAME": "Tokyos Nikkei share average opens down 1.24 pct",
+        "DATE": "2 days ago"
+      }
+    }
+  },
+
+
+  "TREND_MARKET": {
+    "TITLE": "Market tendencies",
+    "TAB1_TITLE": "More active",
+    "TAB2_TITLE": "Profitable",
+    "TAB3_TITLE": "Less profitable",
+    "TXT_FOLLOWED": "Following",
+    "ALT_ICON_ARROW": "Arrow icon",
+    "ALT_ICON_CHECK": "Check icon"
+  },
+
   "FOOTER": {
     "ALT_LOGO": "Logo white google",
     "ITEM1": "Help",
