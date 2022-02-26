@@ -96,5 +96,13 @@
     "ITEM5": "Líderes em sustentabilidade",
     "ITEM6": "Criptomoedas",
     "ITEM7": "Moedas"
+  },
+
+  "SCHEDULE": {
+    "TITLE": "Agenda de lucros",
+    "SUBTITLE": "Com base nas principais ações e suas listas de interesses",
+    "ALT_ICON_CALENDAR": "Ícone de calendário",
+    "MONTH": "FEV",
+    "MONTHOF": "de fev. de"
   }
 }

@@ -1,7 +1,9 @@
 <article class="px-3 pt-3 border border-dark rounded-3">
   <header class="pb-2">
-    <p class="m-0 font-monospace text-light fs-6">Agenda de lucros</p>
-    <small>Com base nas principais ações e suas listas de interesses</small>
+    <p class="m-0 font-monospace text-light fs-6">
+      {{ "SCHEDULE.TITLE" | translate }}
+    </p>
+    <small>{{ "SCHEDULE.SUBTITLE" | translate }}</small>
   </header>
   <ul class="list-unstyled m-0">
     <li
@@ -23,7 +25,11 @@
         </div>
       </article>
       <button class="btn rounded-circle p-2 d-flex hover-bg-dark" type="button">
-        <i class="material-icons-outlined">{{ date.icon }}</i>
+        <i
+          class="material-icons-outlined"
+          title="{{ 'SCHEDULE.ALT_ICON_CALENDAR' | translate }}"
+          >{{ date.icon }}</i
+        >
       </button>
     </li>
   </ul>

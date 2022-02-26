@@ -96,6 +96,14 @@
     "ITEM5": "Leaders in sustainability",
     "ITEM6": "Cryptocurrencies",
     "ITEM7": "Coins"
+  },
+
+  "SCHEDULE": {
+    "TITLE": "Profit schedule",
+    "SUBTITLE": "Based on top stocks and their interest lists",
+    "ALT_ICON_CALENDAR": "Calendar icon",
+    "MONTH": "FEB",
+    "MONTHOF": "feb."
   }
 }
 
