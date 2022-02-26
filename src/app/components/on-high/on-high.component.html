@@ -1,5 +1,5 @@
 <section class="w-100">
-  <p class="mb-2 font-monospace text-light">Em alta nas suas listas</p>
+  <p class="mb-2 font-monospace text-light">{{ "ONHIGH.TITLE" | translate }}</p>
   <ul class="list-unstyled m-0">
     <li
       *ngFor="let item of actionsHighList; let i = index"
@@ -38,15 +38,24 @@
                 item.icon === 'arrow_downward'
             }"
           >
-            <i class="material-icons fs-6">{{ item.icon }}</i>
+            <i
+              class="material-icons fs-6"
+              title="{{ 'ONHIGH.ALT_ICON_ARROW' | translate }}"
+              >{{ item.icon }}</i
+            >
             {{ item.percentage }}</small
           >
           <small class="p-1 follow--hover position-relative">
-            <i class="bi bi-check-circle-fill fs-5 d-flex"></i>
+            <i
+              class="bi bi-check-circle-fill fs-5 d-flex"
+              title="{{ 'ONHIGH.ALT_ICON_CHECK' | translate }}"
+            ></i>
             <div
               class="rounded py-1 px-2 text-body text-center position-absolute bg-body border border-dark shadow"
             >
-              <small class="fs-7">Seguindo</small>
+              <small class="fs-7">{{
+                "ONHIGH.TXT_FOLLOWED" | translate
+              }}</small>
             </div>
           </small>
         </div>

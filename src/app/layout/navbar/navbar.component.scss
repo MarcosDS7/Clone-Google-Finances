@@ -1,7 +1,10 @@
 @import "../../../styles/variables";
 
-.header {
+section.position-fixed {
   z-index: 900;
+}
+
+.header {
   transition: all ease-in 0.2s;
   box-shadow: 0 2px 6px rgba(3, 3, 5, 0.4);
 }

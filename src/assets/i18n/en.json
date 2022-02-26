@@ -55,7 +55,47 @@
     "ITEM4": "Coins",
     "ITEM5": "Cryptocurrencies",
     "ALT_ICON_ARROW": "Arrow icon",
-    "ALT_ICON_SEARCH" :"Search icon"
+    "ALT_ICON_SEARCH" :"Search icon",
+    "PLACEHOLDER_SEARCH": "Search, ETFs and others to compare"
+  },
+
+  "ONHIGH": {
+    "TITLE": "High on your lists",
+    "TXT_FOLLOWED": "Following",
+    "ALT_ICON_CHECK": "Check icon",
+    "ALT_ICON_ARROW": "Arrow icon"
+  },
+
+  "YOUR_WALLET": {
+    "TITLE": "Your wallets",
+    "SUBTITLE": "Only you can see it",
+    "MY_WALLET": "My wallet",
+    "NEW_WALLET": "New wallet",
+    "ALT_ICON_WALLET" :"My wallet icon",
+    "ALT_ICON_ARROW": "Arrow icon",
+    "ALT_ICON_PLUS": "Add icon"
+  },
+
+  "YOUR_LIST": {
+    "TITLE": "YOUR LISTS",
+    "BTN_LIST1": "List of interests",
+    "BTN_LIST2": "My Wallet",
+    "BTN_LIST3": "New list",
+    "ALT_ICON_PLUS": "Add icon",
+    "ALT_ICON_LIST": "List icon",
+    "ALT_ICON_WALLET":"My wallet icon"
+  },
+
+  "TREND": {
+    "TITLE": "Market tendencies",
+    "ALT_ICON_TREND": "Trending icons",
+    "ITEM1": "Market indices",
+    "ITEM2": "More active",
+    "ITEM3": "Profitable",
+    "ITEM4": "Less profitable",
+    "ITEM5": "Leaders in sustainability",
+    "ITEM6": "Cryptocurrencies",
+    "ITEM7": "Coins"
   }
 }
 

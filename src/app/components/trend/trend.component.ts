@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-trend',
@@ -8,34 +9,36 @@ import { Component, OnInit } from '@angular/core';
 export class TrendComponent implements OnInit {
   trendList: any[] = [];
 
-  ngOnInit(): void {
+  constructor(public translate: TranslateService) {}
+
+  ngOnInit() {
     this.trendList.push(
       {
-        name: 'Índices de mercado',
+        name: this.translate.instant('TREND.ITEM1'),
         icon: 'stacked_line_chart',
       },
       {
-        name: 'Mais ativos',
+        name: this.translate.instant('TREND.ITEM2'),
         icon: 'equalizer',
       },
       {
-        name: 'Rentáveis',
+        name: this.translate.instant('TREND.ITEM3'),
         icon: 'trending_up',
       },
       {
-        name: 'Menos rentáveis',
+        name: this.translate.instant('TREND.ITEM4'),
         icon: 'trending_down',
       },
       {
-        name: 'Líderes em sustentabilidade',
+        name: this.translate.instant('TREND.ITEM5'),
         icon: 'compost',
       },
       {
-        name: 'Criptomoedas',
+        name: this.translate.instant('TREND.ITEM6'),
         icon: 'copyright',
       },
       {
-        name: 'Moedas',
+        name: this.translate.instant('TREND.ITEM7'),
         icon: 'paid',
       }
     );
