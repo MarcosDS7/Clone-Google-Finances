@@ -18,7 +18,7 @@
           aria-controls="nav-eua"
           aria-selected="true"
         >
-          Estados Unidos
+          {{ "HERO.ITEM1" | translate }}
         </a>
         <a
           class="font-monospace fs-6 fw-medium text-light text-opacity-50 py-1 px-3 text-decoration-none rounded-pill"
@@ -30,7 +30,7 @@
           aria-controls="nav-europe"
           aria-selected="false"
         >
-          Europa
+          {{ "HERO.ITEM2" | translate }}
         </a>
         <a
           class="font-monospace fs-6 fw-medium text-light text-opacity-50 py-1 px-3 text-decoration-none rounded-pill"
@@ -42,7 +42,7 @@
           aria-controls="nav-asia"
           aria-selected="false"
         >
-          Ásia
+          {{ "HERO.ITEM3" | translate }}
         </a>
         <a
           class="font-monospace fs-6 fw-medium text-light text-opacity-50 py-1 px-3 text-decoration-none rounded-pill"
@@ -54,7 +54,7 @@
           aria-controls="nav-coin"
           aria-selected="false"
         >
-          Moedas
+          {{ "HERO.ITEM4" | translate }}
         </a>
         <a
           class="font-monospace fs-6 fw-medium text-light text-opacity-50 py-1 px-3 text-decoration-none rounded-pill"
@@ -66,7 +66,7 @@
           aria-controls="nav-crypto"
           aria-selected="false"
         >
-          Criptomoedas
+          {{ "HERO.ITEM5" | translate }}
         </a>
       </div>
     </nav>
@@ -94,7 +94,11 @@
                       eua.icon === 'arrow_downward'
                   }"
                 >
-                  <i class="material-icons fs-5">{{ eua.icon }}</i>
+                  <i
+                    class="material-icons fs-5"
+                    title="{{ 'HERO.ALT_ICON_ARROW' | translate }}"
+                    >{{ eua.icon }}</i
+                  >
                 </div>
                 <div class="d-flex flex-column">
                   <small class="text-light">{{ eua.name }}</small>
@@ -138,7 +142,11 @@
                       europe.icon === 'arrow_downward'
                   }"
                 >
-                  <i class="material-icons fs-5">{{ europe.icon }}</i>
+                  <i
+                    class="material-icons fs-5"
+                    title="{{ 'HERO.ALT_ICON_ARROW' | translate }}"
+                    >{{ europe.icon }}</i
+                  >
                 </div>
                 <div class="d-flex flex-column">
                   <small class="text-light">{{ europe.name }}</small>
@@ -182,7 +190,11 @@
                       asia.icon === 'arrow_downward'
                   }"
                 >
-                  <i class="material-icons fs-5">{{ asia.icon }}</i>
+                  <i
+                    class="material-icons fs-5"
+                    title="{{ 'HERO.ALT_ICON_ARROW' | translate }}"
+                    >{{ asia.icon }}</i
+                  >
                 </div>
                 <div class="d-flex flex-column">
                   <small class="text-light">{{ asia.name }}</small>
@@ -220,7 +232,11 @@
                 <div
                   class="hero__tab--width d-flex justify-content-center m-0 mt-1 align-items-center p-0 rounded-3 bg-white bg-opacity-10 text-light text-opacity-50"
                 >
-                  <i class="material-icons fs-5">{{ coin.icon }}</i>
+                  <i
+                    class="material-icons fs-5"
+                    title="{{ 'HERO.ALT_ICON_ARROW' | translate }}"
+                    >{{ coin.icon }}</i
+                  >
                 </div>
                 <div class="d-flex flex-column">
                   <small class="text-light">{{ coin.name }}</small>
@@ -258,7 +274,11 @@
                       crypto.icon === 'arrow_downward'
                   }"
                 >
-                  <i class="material-icons fs-5">{{ crypto.icon }}</i>
+                  <i
+                    class="material-icons fs-5"
+                    title="{{ 'HERO.ALT_ICON_ARROW' | translate }}"
+                    >{{ crypto.icon }}</i
+                  >
                 </div>
                 <div class="d-flex flex-column">
                   <small class="text-light">{{ crypto.name }}</small>
@@ -288,7 +308,11 @@
         type="text"
         placeholder="Pesquisar ações, ETFs e outros para comparar"
       />
-      <i class="material-icons m-3 position-absolute start-0 top-0">search</i>
+      <i
+        class="material-icons m-3 position-absolute start-0 top-0"
+        title="{{ 'HERO.ALT_ICON_SEARCH' | translate }}"
+        >search</i
+      >
     </div>
   </section>
 </article>

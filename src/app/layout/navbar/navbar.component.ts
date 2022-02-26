@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
+import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 import { LanguageService } from 'src/app/services/language.service';
 
 @Component({
@@ -9,11 +10,18 @@ import { LanguageService } from 'src/app/services/language.service';
 })
 export class NavbarComponent implements OnInit {
   @ViewChild('header') header: ElementRef;
+  @ViewChild('pt') pt: ElementRef;
+  @ViewChild('en') en: ElementRef;
+
   listImages: any[] = [];
   listActives: any[] = [];
   sidebar: boolean;
 
-  constructor(private translateService: LanguageService, public route: Router) {
+  constructor(
+    private translateService: LanguageService,
+    public route: Router,
+    public translate: TranslateService
+  ) {
     this.sidebar = false;
 
     window.onscroll = () => {
@@ -25,6 +33,18 @@ export class NavbarComponent implements OnInit {
         window.scrollY > 100
       );
     };
+
+    translate.onLangChange.subscribe((event: LangChangeEvent) => {
+      if (event.lang === 'pt') {
+        this.pt.nativeElement.classList.add('d-none');
+        this.en.nativeElement.classList.add('d-block');
+        this.en.nativeElement.classList.remove('d-none');
+      } else {
+        this.en.nativeElement.classList.add('d-none');
+        this.pt.nativeElement.classList.add('d-block');
+        this.pt.nativeElement.classList.remove('d-none');
+      }
+    });
   }
 
   switchLanguage(lang: string) {

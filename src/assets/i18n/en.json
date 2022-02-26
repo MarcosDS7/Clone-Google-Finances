@@ -46,5 +46,19 @@
       "ALT_ICON_FEEDBACK": "Feedback icon",
       "ALT_ICON_ARROW": "Arrow icon"
     }
+  },
+
+  "HERO": {
+    "ITEM1": "U.S",
+    "ITEM2": "Europe",
+    "ITEM3": "Asia",
+    "ITEM4": "Coins",
+    "ITEM5": "Cryptocurrencies",
+    "ALT_ICON_ARROW": "Arrow icon",
+    "ALT_ICON_SEARCH" :"Search icon"
   }
 }
+
+
+
+

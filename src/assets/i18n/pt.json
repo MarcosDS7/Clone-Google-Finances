@@ -46,5 +46,15 @@
       "ALT_ICON_FEEDBACK": "Ícone de feedback",
       "ALT_ICON_ARROW": "Ícone de seta"
     }
+  },
+
+  "HERO": {
+    "ITEM1": "Estados Unidos",
+    "ITEM2": "Europa",
+    "ITEM3": "Ásia",
+    "ITEM4": "Moedas",
+    "ITEM5": "Criptomoedas",
+    "ALT_ICON_ARROW": "Ícone de seta",
+    "ALT_ICON_SEARCH" :"Ícone de pesquisa"
   }
 }
