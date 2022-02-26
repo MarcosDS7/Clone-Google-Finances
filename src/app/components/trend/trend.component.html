@@ -1,6 +1,8 @@
 <article class="p-3 border border-dark rounded-3">
   <header>
-    <p class="m-0 font-monospace text-light fs-6">Tendências de mercado</p>
+    <p class="m-0 font-monospace text-light fs-6">
+      {{ "TREND.TITLE" | translate }}
+    </p>
   </header>
   <ul class="list-unstyled m-0 d-flex flex-wrap gap-2 mt-3 pe-3">
     <li *ngFor="let item of trendList">
@@ -10,6 +12,7 @@
       >
         <i
           class="material-icons-outlined fs-5"
+          title="{{ 'TREND.ALT_ICON_TREND' | translate }}"
           [ngClass]="{
             'text-white-50':
               item.icon === 'stacked_line_chart' || item.icon === 'paid',

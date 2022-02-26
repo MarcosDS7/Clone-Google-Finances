@@ -22,6 +22,7 @@ import { SearchComponent } from './carrousel/search/search.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { TrendMarketComponent } from './components/trend-market/trend-market.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 @NgModule({
   declarations: [
@@ -47,9 +48,10 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    NgxSpinnerModule,
     SwiperModule,
     ToastrModule.forRoot({
-      timeOut: 5000,
+      timeOut: 6000,
       positionClass: 'toast-bottom-right',
       titleClass: 'fw-normal fs-6 font-monospace',
       iconClasses: {

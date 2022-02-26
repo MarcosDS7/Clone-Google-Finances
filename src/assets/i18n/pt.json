@@ -55,6 +55,46 @@
     "ITEM4": "Moedas",
     "ITEM5": "Criptomoedas",
     "ALT_ICON_ARROW": "Ícone de seta",
-    "ALT_ICON_SEARCH" :"Ícone de pesquisa"
+    "ALT_ICON_SEARCH" :"Ícone de pesquisa",
+    "PLACEHOLDER_SEARCH": "Pesquisar ações, ETFs e outros para comparar"
+  },
+
+  "ONHIGH": {
+    "TITLE": "Em alta nas suas listas",
+    "TXT_FOLLOWED": "Seguindo",
+    "ALT_ICON_CHECK": "Ícone de verificado",
+    "ALT_ICON_ARROW": "Ícone de seta"
+  },
+
+  "YOUR_WALLET": {
+    "TITLE": "Suas carteiras",
+    "SUBTITLE": "Somente você pode ver isso",
+    "MY_WALLET": "Minha carteira",
+    "NEW_WALLET": "Nova carteira",
+    "ALT_ICON_WALLET" :"Ícone de minha carteira",
+    "ALT_ICON_ARROW": "Ícone de seta",
+    "ALT_ICON_PLUS": "Ícone de adicionar"
+  },
+
+  "YOUR_LIST": {
+    "TITLE": "SUAS LISTAS",
+    "BTN_LIST1": "Lista de interesses",
+    "BTN_LIST2": "Minha carteira",
+    "BTN_LIST3": "Nova lista",
+    "ALT_ICON_PLUS": "Ícone de adicionar",
+    "ALT_ICON_LIST": "Ícone de lista",
+    "ALT_ICON_WALLET":"Ícone de minha carteira"
+  },
+
+  "TREND": {
+    "TITLE": "Tendências de mercado",
+    "ALT_ICON_TREND": "Ícones de tendências",
+    "ITEM1": "Índices de mercado",
+    "ITEM2": "Mais ativos",
+    "ITEM3": "Rentáveis",
+    "ITEM4": "Menos rentáveis",
+    "ITEM5": "Líderes em sustentabilidade",
+    "ITEM6": "Criptomoedas",
+    "ITEM7": "Moedas"
   }
 }

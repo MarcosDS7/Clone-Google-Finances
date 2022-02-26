@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-trend',
@@ -8,36 +9,44 @@ import { Component, OnInit } from '@angular/core';
 export class TrendComponent implements OnInit {
   trendList: any[] = [];
 
-  ngOnInit(): void {
-    this.trendList.push(
-      {
-        name: 'Índices de mercado',
-        icon: 'stacked_line_chart',
-      },
-      {
-        name: 'Mais ativos',
-        icon: 'equalizer',
-      },
-      {
-        name: 'Rentáveis',
-        icon: 'trending_up',
-      },
-      {
-        name: 'Menos rentáveis',
-        icon: 'trending_down',
-      },
-      {
-        name: 'Líderes em sustentabilidade',
-        icon: 'compost',
-      },
-      {
-        name: 'Criptomoedas',
-        icon: 'copyright',
-      },
-      {
-        name: 'Moedas',
-        icon: 'paid',
+  constructor(public translate: TranslateService) {}
+
+  ngOnInit() {
+    this.translate.onLangChange.subscribe((e: LangChangeEvent) => {
+      for (let i = 0; i <= 6; i++) {
+        this.trendList.splice(i, 7);
       }
-    );
+
+      this.trendList.push(
+        {
+          name: e.translations.TREND.ITEM1,
+          icon: 'stacked_line_chart',
+        },
+        {
+          name: e.translations.TREND.ITEM2,
+          icon: 'equalizer',
+        },
+        {
+          name: e.translations.TREND.ITEM3,
+          icon: 'trending_up',
+        },
+        {
+          name: e.translations.TREND.ITEM4,
+          icon: 'trending_down',
+        },
+        {
+          name: e.translations.TREND.ITEM5,
+          icon: 'compost',
+        },
+        {
+          name: e.translations.TREND.ITEM6,
+          icon: 'copyright',
+        },
+        {
+          name: e.translations.TREND.ITEM7,
+          icon: 'paid',
+        }
+      );
+    });
   }
 }
