@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
@@ -17,7 +17,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements AfterViewInit, OnInit {
+export class AppComponent implements OnInit {
   title: string;
 
   constructor(
@@ -37,6 +37,13 @@ export class AppComponent implements AfterViewInit, OnInit {
     this.spinner.show();
     setTimeout(() => {
       this.spinner.hide();
+      this.toastrService.success(
+        '<i class="bi bi-currency-dollar text-success"></i>',
+        'Preços da bolsa de valores, cotações em tempo real e notícias sobre o mercado financeiro',
+        {
+          progressBar: true,
+        }
+      );
     }, 2000);
 
     const browserLang =
@@ -45,16 +52,6 @@ export class AppComponent implements AfterViewInit, OnInit {
       Object.values(TranslateEnum).includes(browserLang as TranslateEnum)
         ? (browserLang as TranslateEnum)
         : TranslateEnum.EN
-    );
-  }
-
-  ngAfterViewInit() {
-    this.toastrService.success(
-      '<i class="bi bi-currency-dollar text-success"></i>',
-      'Preços da bolsa de valores, cotações em tempo real e notícias sobre o mercado financeiro',
-      {
-        progressBar: true,
-      }
     );
   }
 }

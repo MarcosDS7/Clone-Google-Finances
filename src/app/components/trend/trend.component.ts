@@ -14,7 +14,6 @@ export class TrendComponent implements OnInit {
   ngOnInit() {
     this.translate.onLangChange.subscribe((e: LangChangeEvent) => {
       for (let i = 0; i <= 6; i++) {
-        console.log(i);
         this.trendList.splice(i, 7);
       }
 
