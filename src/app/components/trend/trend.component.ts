@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-trend',
@@ -12,35 +12,42 @@ export class TrendComponent implements OnInit {
   constructor(public translate: TranslateService) {}
 
   ngOnInit() {
-    this.trendList.push(
-      {
-        name: this.translate.instant('TREND.ITEM1'),
-        icon: 'stacked_line_chart',
-      },
-      {
-        name: this.translate.instant('TREND.ITEM2'),
-        icon: 'equalizer',
-      },
-      {
-        name: this.translate.instant('TREND.ITEM3'),
-        icon: 'trending_up',
-      },
-      {
-        name: this.translate.instant('TREND.ITEM4'),
-        icon: 'trending_down',
-      },
-      {
-        name: this.translate.instant('TREND.ITEM5'),
-        icon: 'compost',
-      },
-      {
-        name: this.translate.instant('TREND.ITEM6'),
-        icon: 'copyright',
-      },
-      {
-        name: this.translate.instant('TREND.ITEM7'),
-        icon: 'paid',
+    this.translate.onLangChange.subscribe((e: LangChangeEvent) => {
+      for (let i = 0; i <= 6; i++) {
+        console.log(i);
+        this.trendList.splice(i, 7);
       }
-    );
+
+      this.trendList.push(
+        {
+          name: e.translations.TREND.ITEM1,
+          icon: 'stacked_line_chart',
+        },
+        {
+          name: e.translations.TREND.ITEM2,
+          icon: 'equalizer',
+        },
+        {
+          name: e.translations.TREND.ITEM3,
+          icon: 'trending_up',
+        },
+        {
+          name: e.translations.TREND.ITEM4,
+          icon: 'trending_down',
+        },
+        {
+          name: e.translations.TREND.ITEM5,
+          icon: 'compost',
+        },
+        {
+          name: e.translations.TREND.ITEM6,
+          icon: 'copyright',
+        },
+        {
+          name: e.translations.TREND.ITEM7,
+          icon: 'paid',
+        }
+      );
+    });
   }
 }

@@ -6,6 +6,7 @@ import { TranslateEnum } from './enums/translate';
 import { LanguageService } from './services/language.service';
 import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -23,6 +24,7 @@ export class AppComponent implements AfterViewInit, OnInit {
     public translateService: TranslateService,
     public changeLanguageService: LanguageService,
     public route: Router,
+    private spinner: NgxSpinnerService,
     private toastrService: ToastrService
   ) {
     this.title =
@@ -32,6 +34,11 @@ export class AppComponent implements AfterViewInit, OnInit {
   }
 
   ngOnInit(): void {
+    this.spinner.show();
+    setTimeout(() => {
+      this.spinner.hide();
+    }, 2000);
+
     const browserLang =
       this.translateService.getBrowserLang() || TranslateEnum.EN;
     this.changeLanguageService.switchLanguage(

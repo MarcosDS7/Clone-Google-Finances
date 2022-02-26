@@ -5051,6 +5051,13 @@ neo-async@^2.6.2:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
+ngx-spinner@^13.1.1:
+  version "13.1.1"
+  resolved "https://registry.yarnpkg.com/ngx-spinner/-/ngx-spinner-13.1.1.tgz#3dfd97644d051398a4707d6b69655e35036a5419"
+  integrity sha512-6aJz4KxIsBrlQckJxcM3CEvMcYbZoSDnQZPu0F/ZYAYunbBOTb9iydw0Gjczg9moum1VURWjX5dTVKmFo85c2Q==
+  dependencies:
+    tslib "^2.3.0"
+
 ngx-toastr@^14.2.1:
   version "14.2.1"
   resolved "https://registry.yarnpkg.com/ngx-toastr/-/ngx-toastr-14.2.1.tgz#2899cc6e69af607aa89a2de807c32b46fdc035f8"
