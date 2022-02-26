@@ -104,5 +104,14 @@
     "ALT_ICON_CALENDAR": "Ícone de calendário",
     "MONTH": "FEV",
     "MONTHOF": "de fev. de"
+  },
+
+  "FOOTER": {
+    "ALT_LOGO": "Logo branca google",
+    "ITEM1": "Ajuda",
+    "ITEM2": "Enviar feedback",
+    "ITEM3": "Privacidade",
+    "ITEM4": "Termos",
+    "ITEM5": "Exoneração de responsabilidade"
   }
 }
