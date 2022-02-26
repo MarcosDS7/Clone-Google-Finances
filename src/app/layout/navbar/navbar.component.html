@@ -1,10 +1,17 @@
-<section class="d-flex justify-content-between align-items-center p-2">
+<section
+  class="d-flex justify-content-between align-items-center p-2 position-fixed bg-body w-100"
+  #header
+>
   <div class="d-flex align-items-center">
     <button
       class="btn d-flex p-2 mx-1 shadow-none rounded-circle hover-bg-gray"
       (click)="openSidebar()"
     >
-      <i class="material-icons text-white" title="Ícone de menu">menu</i>
+      <i
+        class="material-icons text-white"
+        title="{{ 'NAVBAR.ALT_ICON_MENU' | translate }}"
+        >menu</i
+      >
     </button>
     <a
       class="d-flex align-items-center mt-1 text-decoration-none"
@@ -13,12 +20,12 @@
       <img
         class="d-block navbar__imageLogo--width"
         src="./assets/img/google.svg"
-        alt="Logo do google"
+        alt="{{ 'NAVBAR.LOGO_GOOGLE' | translate }}"
       />
       <p
         class="mb-0 ms-2 font-monospace fw-medium fs-5 text-light d-none d-sm-block"
       >
-        Finanças
+        {{ "NAVBAR.LOGO_GOOGLE_TXT" | translate }}
       </p>
     </a>
   </div>
@@ -31,7 +38,9 @@
         type="button"
         aria-expanded="false"
       >
-        <i class="material-icons-outlined text-white" title="Ícone de linguagem"
+        <i
+          class="material-icons-outlined text-white"
+          title="{{ 'NAVBAR.ALT_ICON_LANGUAGE' | translate }}"
           >language</i
         >
       </button>
@@ -41,28 +50,28 @@
       >
         <li>
           <button
-            type="button"
             class="btn d-flex align-items-center gap-2 text-white text-opacity-75 w-100 shadow-none p-2 hover-bg-dark"
+            type="button"
             (click)="switchLanguage('pt')"
           >
             <img
               class="d-block navbar__flag--width rounded"
               src="./assets/img/brasil.svg"
-              alt="Imagem do Brasil"
+              alt="{{ 'NAVBAR.ALT_BRAZIL' | translate }}"
             />
             <small>{{ "NAVBAR.LANGUAGE.PORTGUESE" | translate }}</small>
           </button>
         </li>
         <li>
           <button
-            type="button"
             class="btn d-flex align-items-center gap-2 text-white text-opacity-75 w-100 shadow-none p-2 hover-bg-dark"
+            type="button"
             (click)="switchLanguage('en')"
           >
             <img
               class="d-block navbar__flag--width rounded"
               src="./assets/img/usa.svg"
-              alt="Imagem dos Estados Unidos"
+              alt="{{ 'NAVBAR.ALT_EUA' | translate }}"
             />
             <small>{{ "NAVBAR.LANGUAGE.ENGLISH" | translate }}</small>
           </button>
@@ -77,7 +86,11 @@
         type="button"
         aria-expanded="false"
       >
-        <i class="material-icons text-white" title="Ícone de itens">apps</i>
+        <i
+          class="material-icons text-white"
+          title="{{ 'NAVBAR.ALT_ICON_APP' | translate }}"
+          >apps</i
+        >
       </button>
       <ul
         class="dropdown-menu navbar__dropdownApps--background col-8 col-sm-5 col-md-4 col-lg-3 col-xl-3 col-xxl-2 p-2 border border-dark"
@@ -93,7 +106,7 @@
                 <img
                   class="d-block w-100"
                   src="./assets/img/{{ image.url }}"
-                  alt="Imagem de apps do google"
+                  alt="{{ 'NAVBAR.ALT_APPS' | translate }}"
                 />
               </div>
               <small>{{ image.name }}</small>
@@ -113,7 +126,7 @@
         <img
           class="rounded-circle d-block navbar__imageUser--width"
           src="./assets/img/img-user.png"
-          alt="Imagem do usuário"
+          alt="{{ 'NAVBAR.ALT_IMG_USER' | translate }}"
         />
       </button>
       <ul
@@ -127,7 +140,7 @@
             <img
               class="rounded-circle d-block w-100"
               src="./assets/img/img-user.png"
-              alt="Imagem do usuário"
+              alt="{{ 'NAVBAR.ALT_IMG_USER' | translate }}"
             />
           </div>
           <p class="m-0 fw-medium font-monospace text-light">Ultra Chrome</p>
@@ -137,7 +150,7 @@
           <button
             class="font-monospace btn border border-dark fs-6 text-white hover-bg-dark rounded-pill mt-3 px-3"
           >
-            Gerenciar sua Conta do Google
+            {{ "NAVBAR.BTN_ACCOUNT" | translate }}
           </button>
         </div>
         <div class="border-bottom border-dark">
@@ -148,7 +161,7 @@
             <img
               class="rounded-circle d-block navbar__imageOtherUser--width"
               src="./assets/img/img-user-yellow.png"
-              alt="Imagem do usuário"
+              alt="{{ 'NAVBAR.ALT_IMG_USER' | translate }}"
             />
             <div class="text-start">
               <p class="fs-6 font-monospace text-light fw-medium m-0">
@@ -163,9 +176,12 @@
             class="py-3 btn w-100 px-4 d-flex align-items-center gap-3 text-light hover-bg-dark"
             type="button"
           >
-            <i class="bi bi-person-plus d-flex fs-5 ms-2"></i>
+            <i
+              class="bi bi-person-plus d-flex fs-5 ms-2"
+              title="{{ 'NAVBAR.ALT_ICON_PERSON_PLUS' | translate }}"
+            ></i>
             <p class="fs-6 font-monospace fw-medium mb-0 me-2">
-              Adicionar outra conta
+              {{ "NAVBAR.ADD_ACCOUNT" | translate }}
             </p>
           </button>
         </div>
@@ -175,7 +191,7 @@
           <button
             class="font-monospace btn border border-dark fs-6 text-white hover-bg-dark rounded px-3 py-2"
           >
-            Sair de todas as contas
+            {{ "NAVBAR.LOGOUT" | translate }}
           </button>
         </div>
         <div
@@ -184,13 +200,13 @@
           <a
             class="text-decoration-none text-light text-opacity-50 py-1 px-2 hover-bg-dark"
             [routerLink]="['/']"
-            ><small>Política de Privacidade</small></a
+            ><small>{{ "NAVBAR.TXT_POLITIC" | translate }}</small></a
           >
           <span class="py-1">•</span>
           <a
             class="text-decoration-none text-light text-opacity-50 py-1 px-2 hover-bg-dark"
             [routerLink]="['/']"
-            ><small>Termos de Serviço</small></a
+            ><small>{{ "NAVBAR.TXT_TERMS" | translate }}</small></a
           >
         </div>
       </ul>
@@ -199,7 +215,7 @@
 </section>
 <!-- SIDEBAR  -->
 <aside
-  class="navbar__sidebar--config position-absolute h-100 min-vh-100 top-0 start-0 d-flex flex-column pt-3"
+  class="navbar__sidebar--config position-fixed h-100 min-vh-100 start-0 d-flex flex-column pt-3 top-0"
   [ngClass]="{
     'navbar__sidebar--transform-out': sidebar === false,
     'navbar__sidebar--transform-in': sidebar === true
@@ -213,15 +229,21 @@
       <img
         class="d-block navbar__imageLogo--width"
         src="./assets/img/google.svg"
-        alt="Logo do google"
+        alt="{{ 'NAVBAR.LOGO_GOOGLE' | translate }}"
       />
-      <p class="mb-0 ms-2 font-monospace fw-medium fs-5 text-light">Finanças</p>
+      <p class="mb-0 ms-2 font-monospace fw-medium fs-5 text-light">
+        {{ "NAVBAR.LOGO_GOOGLE_TXT" | translate }}
+      </p>
     </a>
     <button
       class="btn shadow-none d-flex mt-1 text-light text-opacity-50"
       (click)="closeSidebar()"
     >
-      <i class="material-icons fs-4">close</i>
+      <i
+        class="material-icons fs-4"
+        title="{{ 'NAVBAR.SIDEBAR.ALT_ICON_CLOSE' | translate }}"
+        >close</i
+      >
     </button>
   </header>
   <section class="pt-4 pe-3 pb-5 pb-sm-0">
@@ -230,52 +252,84 @@
         class="d-flex gap-3 hover-bg-item-sidebar align-items-center text-decoration-none ps-4 py-2 rounded-start rounded-pill bg-body text-primary bg-opacity-75 active"
         [routerLink]="['/']"
       >
-        <i class="material-icons-outlined fs-4 py-1">signal_cellular_alt</i>
-        <small class="py-1 font-monospace fw-medium">Página inicial</small>
+        <i
+          class="material-icons-outlined fs-4 py-1"
+          title="{{ 'NAVBAR.SIDEBAR.ALT_ICON_SIGNAL' | translate }}"
+          >signal_cellular_alt</i
+        >
+        <small class="py-1 font-monospace fw-medium">{{
+          "NAVBAR.SIDEBAR.ITEM1" | translate
+        }}</small>
       </a>
       <a
         class="d-flex gap-3 hover-bg-item-sidebar align-items-center text-decoration-none ps-4 py-2 rounded-start rounded-pill text-light text-opacity-75"
         [routerLink]="['/']"
       >
-        <i class="material-icons-outlined fs-4 py-1">manage_search</i>
-        <small class="py-1 font-monospace">Tendências de mercado</small>
+        <i
+          class="material-icons-outlined fs-4 py-1"
+          title="{{ 'NAVBAR.SIDEBAR.ALT_ICON_SEARCH' | translate }}"
+          >manage_search</i
+        >
+        <small class="py-1 font-monospace">{{
+          "NAVBAR.SIDEBAR.ITEM2" | translate
+        }}</small>
       </a>
     </div>
     <hr class="bg-dark m-0" />
     <div class="py-1">
       <div class="d-flex align-items-center justify-content-between ps-4 pt-2">
-        <small class="m-0 fs-7">PORTFÓLIOS</small>
+        <small class="m-0 fs-7">{{ "NAVBAR.SIDEBAR.ITEM3" | translate }}</small>
         <button class="d-flex btn p-2 hover-bg-item-sidebar rounded-pill">
-          <i class="material-icons-outlined text-primary fs-4">add</i>
+          <i
+            class="material-icons-outlined text-primary fs-4"
+            title="{{ 'NAVBAR.SIDEBAR.ALT_ICON_PLUS' | translate }}"
+            >add</i
+          >
         </button>
       </div>
       <a
         class="d-flex gap-3 hover-bg-item-sidebar align-items-center text-decoration-none ps-4 py-2 rounded-start rounded-pill text-light text-opacity-75"
         [routerLink]="['/']"
       >
-        <i class="material-icons-outlined fs-4 py-1">insert_chart</i>
-        <small class="py-1 font-monospace">Minha carteira</small>
+        <i
+          class="material-icons-outlined fs-4 py-1"
+          title="{{ 'NAVBAR.SIDEBAR.ALT_ICON_WALLET' | translate }}"
+          >insert_chart</i
+        >
+        <small class="py-1 font-monospace">{{
+          "NAVBAR.SIDEBAR.ITEM4" | translate
+        }}</small>
       </a>
     </div>
     <div class="pb-2">
       <div class="d-flex align-items-center justify-content-between ps-4 pt-2">
-        <small class="m-0 fs-7">LISTA DE INTERESSES</small>
+        <small class="m-0 fs-7">{{ "NAVBAR.SIDEBAR.ITEM5" | translate }}</small>
         <button class="d-flex btn p-2 hover-bg-item-sidebar rounded-pill">
-          <i class="material-icons-outlined text-primary fs-4">add</i>
+          <i
+            class="material-icons-outlined text-primary fs-4"
+            title="{{ 'NAVBAR.SIDEBAR.ALT_ICON_PLUS' | translate }}"
+            >add</i
+          >
         </button>
       </div>
       <a
         class="d-flex gap-3 hover-bg-item-sidebar align-items-center text-decoration-none ps-4 py-2 rounded-start rounded-pill text-light text-opacity-75"
         [routerLink]="['/']"
       >
-        <i class="material-icons-outlined fs-4 py-1 transform-rotate">toc</i>
-        <small class="py-1 font-monospace">Lista de interesses</small>
+        <i
+          class="material-icons-outlined fs-4 py-1 transform-rotate"
+          title="{{ 'NAVBAR.SIDEBAR.ALT_ICON_LIST' | translate }}"
+          >toc</i
+        >
+        <small class="py-1 font-monospace">{{
+          "NAVBAR.SIDEBAR.ITEM6" | translate
+        }}</small>
       </a>
     </div>
     <hr class="bg-dark m-0" />
     <div class="pt-3">
       <div class="ps-4 pt-1">
-        <small class="m-0 fs-7">MAIS ATIVAS</small>
+        <small class="m-0 fs-7">{{ "NAVBAR.SIDEBAR.ITEM7" | translate }}</small>
       </div>
       <ul class="list-unstyled my-2">
         <li *ngFor="let actives of listActives">
@@ -286,6 +340,7 @@
             <div class="d-flex align-items-center gap-2">
               <i
                 class="material-icons-outlined fs-6 bg-body rounded-circle p-2 bg-opacity-50"
+                title="{{ 'NAVBAR.SIDEBAR.ALT_ICON_ARROW' | translate }}"
                 >trending_flat</i
               >
               <small class="py-1 font-monospace">{{ actives.name }}</small>
@@ -301,10 +356,14 @@
         class="d-flex gap-3 hover-bg-item-sidebar align-items-center text-decoration-none ps-4 py-2 rounded-start rounded-pill text-light text-opacity-75"
         [routerLink]="['/']"
       >
-        <i class="material-icons-outlined fs-4 py-1 transform-rotate"
+        <i
+          class="material-icons-outlined fs-4 py-1 transform-rotate"
+          title="{{ 'NAVBAR.SIDEBAR.ALT_ICON_FEEDBACK' | translate }}"
           >feedback</i
         >
-        <small class="py-1 font-monospace">Enviar Feedback</small>
+        <small class="py-1 font-monospace">{{
+          "NAVBAR.SIDEBAR.TXT_FEEDBACK" | translate
+        }}</small>
       </a>
     </div>
   </section>

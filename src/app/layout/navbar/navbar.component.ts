@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
 import { LanguageService } from 'src/app/services/language.service';
 
@@ -8,17 +8,22 @@ import { LanguageService } from 'src/app/services/language.service';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
+  @ViewChild('header') header: ElementRef;
   listImages: any[] = [];
   listActives: any[] = [];
   sidebar: boolean;
 
   constructor(private translateService: LanguageService, public route: Router) {
     this.sidebar = false;
+
     window.onscroll = () => {
       if (this.sidebar === true) {
         this.sidebar = false;
-        console.log('click em qualquer coisa');
       }
+      this.header.nativeElement.classList.toggle(
+        'header',
+        window.scrollY > 100
+      );
     };
   }
 

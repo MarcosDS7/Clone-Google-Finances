@@ -1,5 +1,11 @@
 @import "../../../styles/variables";
 
+.header {
+  z-index: 900;
+  transition: all ease-in 0.2s;
+  box-shadow: 0 2px 6px rgba(3, 3, 5, 0.4);
+}
+
 .navbar__imageLogo--width {
   height: 1.5rem;
   width: 4.625rem;
@@ -40,7 +46,7 @@
 
 .navbar__sidebar--config {
   overflow-x: hidden;
-  z-index: 990;
+  z-index: 1000;
   width: 17rem;
   box-shadow: 0 0 1rem rgb(0 0 0 / 28%);
   transition: all ease 0.15s;
