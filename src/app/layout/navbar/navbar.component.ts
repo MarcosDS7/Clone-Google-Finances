@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { LanguageService } from 'src/app/services/language.service';
 
@@ -17,6 +17,7 @@ export class NavbarComponent implements OnInit {
     window.onscroll = () => {
       if (this.sidebar === true) {
         this.sidebar = false;
+        console.log('click em qualquer coisa');
       }
     };
   }
