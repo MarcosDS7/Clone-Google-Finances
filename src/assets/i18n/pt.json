@@ -10,6 +10,51 @@
     "LANGUAGE": {
       "PORTGUESE": "Português",
       "ENGLISH": "Inglês"
+    },
+
+    "ALT_ICON_MENU": "Ícone de menu",
+    "LOGO_GOOGLE": "Logo do google",
+    "LOGO_GOOGLE_TXT": "Finanças",
+    "ALT_ICON_LANGUAGE": "Ícone de linguagem",
+    "ALT_BRAZIL": "Imagem do Brasil",
+    "ALT_EUA": "Imagem dos Estados Unidos",
+    "ALT_ICON_APP": "Ícone de itens",
+    "ALT_APPS": "Imagem dos aplicativos do Google",
+    "ALT_IMG_USER": "Imagem do usuário",
+    "BTN_ACCOUNT": "Gerenciar sua Conta do Google",
+    "ADD_ACCOUNT": "Adicionar outra conta",
+    "LOGOUT": "Sair de todas as contas",
+    "TXT_POLITIC": "Política de Privacidade",
+    "TXT_TERMS": "Termos de Serviço",
+
+    "SIDEBAR": {
+      "ITEM1": "Página inicial",
+      "ITEM2": "Tendências de mercado",
+      "ITEM3": "PORTFÓLIOS",
+      "ITEM4": "Minha carteira",
+      "ITEM5": "LISTA DE INTERESSES",
+      "ITEM6": "Lista de interesses",
+      "ITEM7": "MAIS ATIVAS",
+      "TXT_FEEDBACK": "Enviar Feedback",
+      "ALT_ICON_PERSON_PLUS": "Ícone de adicionar pessoa",
+      "ALT_ICON_CLOSE": "Ícone de fechar",
+      "ALT_ICON_SIGNAL": "Ícone de sinal de celular",
+      "ALT_ICON_SEARCH": "Ícone de pesquisa",
+      "ALT_ICON_PLUS": "Ícone de adicionar",
+      "ALT_ICON_LIST": "Ícone de lista",
+      "ALT_ICON_WALLET": "Ícone de minha carteira",
+      "ALT_ICON_FEEDBACK": "Ícone de feedback",
+      "ALT_ICON_ARROW": "Ícone de seta"
     }
+  },
+
+  "HERO": {
+    "ITEM1": "Estados Unidos",
+    "ITEM2": "Europa",
+    "ITEM3": "Ásia",
+    "ITEM4": "Moedas",
+    "ITEM5": "Criptomoedas",
+    "ALT_ICON_ARROW": "Ícone de seta",
+    "ALT_ICON_SEARCH" :"Ícone de pesquisa"
   }
 }

@@ -10,6 +10,55 @@
     "LANGUAGE": {
       "PORTGUESE": "Portuguese",
       "ENGLISH": "English"
+    },
+
+    "ALT_ICON_MENU": "Menu icon",
+    "LOGO_GOOGLE": "Logo google",
+    "LOGO_GOOGLE_TXT": "Finances",
+    "ALT_ICON_LANGUAGE": "Language icon",
+    "ALT_BRAZIL": "Image of Brazil",
+    "ALT_EUA": "United States image",
+    "ALT_ICON_APP": "Items icon",
+    "ALT_APPS": "Google apps image",
+    "ALT_IMG_USER": "User image",
+    "BTN_ACCOUNT": "Manage your Google Account",
+    "ADD_ACCOUNT": "Add another account",
+    "LOGOUT": "Log out of all accounts",
+    "TXT_POLITIC": "Privacy Policy",
+    "TXT_TERMS": "Service Terms",
+
+    "SIDEBAR": {
+      "ITEM1": "Home page",
+      "ITEM2": "Market tendencies",
+      "ITEM3": "PORTFOLIO",
+      "ITEM4": "My wallet",
+      "ITEM5": "LIST OF INTERESTS",
+      "ITEM6": "List of interests",
+      "ITEM7": "MORE ACTIVE",
+      "TXT_FEEDBACK": "Send feedback",
+      "ALT_ICON_PERSON_PLUS": "Add person icon",
+      "ALT_ICON_CLOSE": "Close icon",
+      "ALT_ICON_SIGNAL": "Cell phone signal icon",
+      "ALT_ICON_SEARCH": "Search icon",
+      "ALT_ICON_PLUS": "Add icon",
+      "ALT_ICON_LIST": "List icon",
+      "ALT_ICON_WALLET": "My wallet icon",
+      "ALT_ICON_FEEDBACK": "Feedback icon",
+      "ALT_ICON_ARROW": "Arrow icon"
     }
+  },
+
+  "HERO": {
+    "ITEM1": "U.S",
+    "ITEM2": "Europe",
+    "ITEM3": "Asia",
+    "ITEM4": "Coins",
+    "ITEM5": "Cryptocurrencies",
+    "ALT_ICON_ARROW": "Arrow icon",
+    "ALT_ICON_SEARCH" :"Search icon"
   }
 }
+
+
+
+

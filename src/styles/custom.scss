@@ -10,6 +10,12 @@ body {
   font-family: $font-family-sans-serif;
 }
 
+@media only screen and (min-width: 1400px) {
+  .container-lg {
+    max-width: 1024px !important;
+  }
+}
+
 .fw-medium {
   font-weight: var(--text-medium);
 }
