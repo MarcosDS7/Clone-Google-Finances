@@ -1,4 +1,5 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-on-high',
@@ -7,6 +8,8 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 })
 export class OnHighComponent implements OnInit {
   actionsHighList: any[] = [];
+
+  constructor(public translate: TranslateService) {}
 
   ngOnInit(): void {
     this.actionsHighList.push(
@@ -59,5 +62,16 @@ export class OnHighComponent implements OnInit {
         icon: 'arrow_downward',
       }
     );
+  }
+
+  active(i: any) {
+    document.getElementById(i)!.classList.toggle('text-primary');
+    if (document.getElementById(i)!.classList.contains('text-primary')) {
+      document.getElementById('follow-' + i)!.innerText =
+        this.translate.instant('ONHIGH.TXT_FOLLOWED');
+    } else {
+      document.getElementById('follow-' + i)!.innerText =
+        this.translate.instant('ONHIGH.TXT_FOLLOW');
+    }
   }
 }

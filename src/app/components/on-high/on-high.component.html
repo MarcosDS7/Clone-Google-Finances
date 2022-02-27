@@ -47,14 +47,16 @@
           >
           <small class="p-1 follow--hover position-relative">
             <i
+              (click)="active(i)"
+              id="{{ i }}"
               class="bi bi-check-circle-fill fs-5 d-flex"
               title="{{ 'ONHIGH.ALT_ICON_CHECK' | translate }}"
             ></i>
             <div
               class="rounded py-1 px-2 text-body text-center position-absolute bg-body border border-dark shadow"
             >
-              <small class="fs-7">{{
-                "ONHIGH.TXT_FOLLOWED" | translate
+              <small class="fs-7" id="follow-{{ i }}">{{
+                "ONHIGH.TXT_FOLLOW" | translate
               }}</small>
             </div>
           </small>

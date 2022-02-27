@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-trend-market',
@@ -9,6 +10,8 @@ export class TrendMarketComponent implements OnInit {
   trendList: any[] = [];
   profitableList: any[] = [];
   lessList: any[] = [];
+
+  constructor(public translate: TranslateService) {}
 
   ngOnInit(): void {
     this.trendList.push(
@@ -145,5 +148,43 @@ export class TrendMarketComponent implements OnInit {
         icon: 'arrow_upward',
       }
     );
+  }
+
+  active(i: any) {
+    document.getElementById('t' + i)!.classList.toggle('text-primary');
+    if (document.getElementById('t' + i)!.classList.contains('text-primary')) {
+      document.getElementById('t-' + i)!.innerText = this.translate.instant(
+        'ONHIGH.TXT_FOLLOWED'
+      );
+    } else {
+      document.getElementById('t-' + i)!.innerText =
+        this.translate.instant('ONHIGH.TXT_FOLLOW');
+    }
+  }
+
+  activeT(i: any) {
+    document.getElementById('tr' + i)!.classList.toggle('text-primary');
+    if (document.getElementById('tr' + i)!.classList.contains('text-primary')) {
+      document.getElementById('tr-' + i)!.innerText = this.translate.instant(
+        'ONHIGH.TXT_FOLLOWED'
+      );
+    } else {
+      document.getElementById('tr-' + i)!.innerText =
+        this.translate.instant('ONHIGH.TXT_FOLLOW');
+    }
+  }
+
+  activeTR(i: any) {
+    document.getElementById('tre' + i)!.classList.toggle('text-primary');
+    if (
+      document.getElementById('tre' + i)!.classList.contains('text-primary')
+    ) {
+      document.getElementById('tre-' + i)!.innerText = this.translate.instant(
+        'ONHIGH.TXT_FOLLOWED'
+      );
+    } else {
+      document.getElementById('tre-' + i)!.innerText =
+        this.translate.instant('ONHIGH.TXT_FOLLOW');
+    }
   }
 }

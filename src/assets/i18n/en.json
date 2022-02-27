@@ -62,6 +62,7 @@
   "ONHIGH": {
     "TITLE": "High on your lists",
     "TXT_FOLLOWED": "Following",
+    "TXT_FOLLOW": "Follow",
     "ALT_ICON_CHECK": "Check icon",
     "ALT_ICON_ARROW": "Arrow icon"
   },
