@@ -1,6 +1,6 @@
 <section class="w-100 mt-5">
   <p class="mb-3 font-monospace text-light">
-    Notícias sobre o mercado financeiro de hoje
+    {{ "NEW.TITLE" | translate }}
   </p>
   <nav>
     <div
@@ -18,7 +18,7 @@
         aria-controls="nav-main"
         aria-selected="true"
       >
-        Principais notícias
+      {{ "NEW.TAB1_TITLE" | translate }}
       </a>
       <a
         class="font-monospace fs-6 fw-medium text-light text-opacity-50 py-1 px-3 text-decoration-none rounded-pill"
@@ -30,7 +30,7 @@
         aria-controls="nav-local"
         aria-selected="false"
       >
-        Mercado local
+      {{ "NEW.TAB2_TITLE" | translate }}
       </a>
       <a
         class="font-monospace fs-6 fw-medium text-light text-opacity-50 py-1 px-3 text-decoration-none rounded-pill"
@@ -42,7 +42,7 @@
         aria-controls="nav-worldwide"
         aria-selected="false"
       >
-        Mercados mundiais
+      {{ "NEW.TAB3_TITLE" | translate }}
       </a>
     </div>
   </nav>
@@ -75,7 +75,7 @@
             </article>
             <img
               src="{{ news.image }}"
-              alt="Notícias"
+              alt=" {{ 'NEW.ALT_NEWS' | translate }}"
               class="d-block rounded-3 object-fit-cover news__image--width"
             />
           </a>
@@ -110,7 +110,7 @@
             </article>
             <img
               src="{{ local.image }}"
-              alt="Notícias"
+              alt=" {{ 'NEW.ALT_NEWS' | translate }}"
               class="d-block rounded-3 object-fit-cover news__image--width"
             />
           </a>
@@ -145,7 +145,7 @@
             </article>
             <img
               src="{{ word.image }}"
-              alt="Notícias"
+              alt=" {{ 'NEW.ALT_NEWS' | translate }}"
               class="d-block rounded-3 object-fit-cover news__image--width"
             />
           </a>

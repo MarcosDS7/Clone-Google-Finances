@@ -44,7 +44,7 @@ export class AppComponent implements OnInit {
           progressBar: true,
         }
       );
-    }, 2000);
+    }, 2500);
 
     const browserLang =
       this.translateService.getBrowserLang() || TranslateEnum.EN;

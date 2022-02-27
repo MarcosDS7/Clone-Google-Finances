@@ -1,5 +1,7 @@
 <header class="mb-3 mt-4">
-  <small class="text-light text-opacity-75">Pesquisas recentes</small>
+  <small class="text-light text-opacity-75">{{
+    "SEARCH.TITLE" | translate
+  }}</small>
 </header>
 <swiper
   [slidesPerView]="1"
@@ -69,11 +71,15 @@
           >
         </div>
         <small class="p-1 carrousel__follow--hover position-relative">
-          <i class="material-icons fs-4 d-flex">add_circle_outline</i>
+          <i
+            class="material-icons fs-4 d-flex"
+            title="{{ 'SEARCH.ALT_ICON_ADD' | translate }}"
+            >add_circle_outline</i
+          >
           <div
             class="rounded py-1 px-2 text-body text-center position-absolute bg-body border border-dark shadow"
           >
-            <small class="fs-7">Seguindo</small>
+            <small class="fs-7">{{ "SEARCH.TXT_FOLLOWED" | translate }}</small>
           </div>
         </small>
       </div>
