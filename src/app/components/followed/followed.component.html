@@ -7,7 +7,7 @@
   <ul class="list-unstyled m-0">
     <li
       class="d-flex justify-content-between align-items-center py-3 border-top border-dark gap-3"
-      *ngFor="let followed of followedList"
+      *ngFor="let followed of followedList; let i = index"
     >
       <article class="d-flex flex-column">
         <small
@@ -33,11 +33,13 @@
           <i
             class="bi bi-check-circle-fill fs-5 d-flex"
             title="{{ 'FOLLOWED.ALT_ICON_CHECK' | translate }}"
+            (click)="active(i)"
+            id="f{{ i }}"
           ></i>
           <div
             class="rounded py-1 px-2 text-body text-center position-absolute bg-body border border-dark shadow"
           >
-            <small class="fs-7">{{
+            <small class="fs-7" id="f-{{ i }}">{{
               "FOLLOWED.TXT_FOLLOWED" | translate
             }}</small>
           </div>

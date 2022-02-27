@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-followed',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FollowedComponent implements OnInit {
   followedList: any[] = [];
+
+  constructor(public translate: TranslateService) {}
 
   ngOnInit(): void {
     this.followedList.push(
@@ -41,5 +44,17 @@ export class FollowedComponent implements OnInit {
         percentage: '0,00%',
       }
     );
+  }
+
+  active(i: any) {
+    document.getElementById('f' + i)!.classList.toggle('text-primary');
+    if (document.getElementById('f' + i)!.classList.contains('text-primary')) {
+      document.getElementById('f-' + i)!.innerText = this.translate.instant(
+        'ONHIGH.TXT_FOLLOWED'
+      );
+    } else {
+      document.getElementById('f-' + i)!.innerText =
+        this.translate.instant('ONHIGH.TXT_FOLLOW');
+    }
   }
 }

@@ -102,14 +102,16 @@
                 >
                 <small class="p-1 follow--hover position-relative">
                   <i
+                    (click)="active(i)"
+                    id="t{{ i }}"
                     class="bi bi-check-circle-fill fs-5 d-flex"
                     title="{{ 'TREND_MARKET.ALTALT_ICON_CHECK' | translate }}"
                   ></i>
                   <div
                     class="rounded py-1 px-2 text-body text-center position-absolute bg-body border border-dark shadow"
                   >
-                    <small class="fs-7">{{
-                      "TREND_MARKET.TXT_FOLLOWED" | translate
+                    <small class="fs-7" id="t-{{ i }}">{{
+                      "ONHIGH.TXT_FOLLOW" | translate
                     }}</small>
                   </div>
                 </small>
@@ -172,14 +174,16 @@
                 >
                 <small class="p-1 follow--hover position-relative">
                   <i
+                    (click)="activeT(i)"
+                    id="tr{{ i }}"
                     class="bi bi-check-circle-fill fs-5 d-flex"
                     title="{{ 'TREND_MARKET.ALTALT_ICON_CHECK' | translate }}"
                   ></i>
                   <div
                     class="rounded py-1 px-2 text-body text-center position-absolute bg-body border border-dark shadow"
                   >
-                    <small class="fs-7"
-                      >{{ "TREND_MARKET.TXT_FOLLOWED" | translate }}
+                    <small class="fs-7" id="tr-{{ i }}"
+                      >{{ "ONHIGH.TXT_FOLLOW" | translate }}
                     </small>
                   </div>
                 </small>
@@ -237,14 +241,16 @@
                 >
                 <small class="p-1 follow--hover position-relative">
                   <i
+                    (click)="activeTR(i)"
+                    id="tre{{ i }}"
                     class="bi bi-check-circle-fill fs-5 d-flex"
                     title="{{ 'TREND_MARKET.ALTALT_ICON_CHECK' | translate }}"
                   ></i>
                   <div
                     class="rounded py-1 px-2 text-body text-center position-absolute bg-body border border-dark shadow"
                   >
-                    <small class="fs-7"
-                      >{{ "TREND_MARKET.TXT_FOLLOWED" | translate }}
+                    <small class="fs-7" id="tre-{{ i }}"
+                      >{{ "ONHIGH.TXT_FOLLOW" | translate }}
                     </small>
                   </div>
                 </small>
