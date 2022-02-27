@@ -83,7 +83,14 @@
     "BTN_LIST3": "Nova lista",
     "ALT_ICON_PLUS": "Ícone de adicionar",
     "ALT_ICON_LIST": "Ícone de lista",
-    "ALT_ICON_WALLET":"Ícone de minha carteira"
+    "ALT_ICON_WALLET":"Ícone de minha carteira",
+
+    "MODAL": {
+      "TITLE": "Criar uma nova lista",
+      "BTN_CANCEL": "Cancelar",
+      "BTN_SAVE": "Salvar",
+      "PLACEHOLDER": "Nome da lista"
+    }
   },
 
   "TREND": {

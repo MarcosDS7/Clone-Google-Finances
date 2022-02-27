@@ -9,7 +9,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OnHighComponent } from './components/on-high/on-high.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { YourWalletsComponent } from './components/your-wallets/your-wallets.component';
 import { TrendComponent } from './components/trend/trend.component';
 import { YourListsComponent } from './components/your-lists/your-lists.component';
@@ -42,6 +42,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     TrendMarketComponent,
   ],
   imports: [
+    ReactiveFormsModule,
     FormsModule,
     NgbModule,
     BrowserModule,

@@ -46,7 +46,7 @@ $card-border-color: rgba($white, 0.125);
 $card-bg: rgba($white, 0.05);
 $table-bg: $white;
 $list-group-bg: rgba($white, 0.05);
-$modal-content-bg: rgba($white, 1);
+$modal-content-bg: var(--color-dark-1);
 $jumbotron-bg: rgba($white, 0.05);
 $font-sizes: (
   1: 3.75rem,

@@ -83,7 +83,14 @@
     "BTN_LIST3": "New list",
     "ALT_ICON_PLUS": "Add icon",
     "ALT_ICON_LIST": "List icon",
-    "ALT_ICON_WALLET":"My wallet icon"
+    "ALT_ICON_WALLET":"My wallet icon",
+
+    "MODAL": {
+      "TITLE": "Create a new list",
+      "BTN_CANCEL": "Cancel",
+      "BTN_SAVE": "To save",
+      "PLACEHOLDER": "List name"
+    }
   },
 
   "TREND": {
